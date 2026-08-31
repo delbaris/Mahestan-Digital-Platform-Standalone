@@ -1,0 +1,3167 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مجتمع تجاری مهستان کرج | پلتفرم دیجیتال</title>
+  <meta name="description" content="پلتفرم یکپارچه مجتمع تجاری مهستان کرج" />
+
+  <!--
+  ═══════════════════════════════════════════════════════
+  راهنمای تصاویر واقعی:
+  پوشه images کنار همین فایل بسازید و ۴ عکس را با نام‌های
+  mahestan-1.jpg تا mahestan-4.jpg کپی کنید.
+  در نبود عکس‌ها، Placeholder هوشمند نمایش داده می‌شود.
+  ═══════════════════════════════════════════════════════
+-->
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
+    type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <style>
+    /* =========================================================
+   MAHESTAN DESIGN SYSTEM - Premium Persian Commercial RE
+   ========================================================= */
+    :root {
+      --c-navy-900: #0A1828;
+      --c-navy-800: #0F1F38;
+      --c-navy-700: #152A47;
+      --c-charcoal: #1E293B;
+      --c-slate-700: #334155;
+      --c-slate-500: #64748B;
+      --c-slate-400: #94A3B8;
+      --c-slate-200: #E2E8F0;
+      --c-slate-100: #F1F5F9;
+      --c-ivory: #FAF9F6;
+      --c-white: #FFFFFF;
+      --c-gold: #C9A96E;
+      --c-gold-600: #B8925A;
+      --c-gold-400: #E2C994;
+      --c-gold-100: #F7F0E2;
+      --c-success: #0F8F6A;
+      --c-success-50: #E6F5EF;
+      --c-warning: #D97706;
+      --c-warning-50: #FEF3C7;
+      --c-error: #C8323A;
+      --c-error-50: #FEE2E2;
+      --c-info: #2563EB;
+      --c-info-50: #DBEAFE;
+      --font-sans: 'Vazirmatn', 'Segoe UI', 'Tahoma', system-ui, sans-serif;
+      --r-sm: 6px;
+      --r-md: 10px;
+      --r-lg: 16px;
+      --r-xl: 24px;
+      --shadow-sm: 0 1px 2px rgba(15, 24, 40, .06);
+      --shadow-md: 0 4px 12px rgba(15, 24, 40, .08);
+      --shadow-lg: 0 12px 32px rgba(15, 24, 40, .12);
+      --shadow-xl: 0 24px 48px rgba(15, 24, 40, .18);
+      --sidebar-w: 260px;
+      --header-h: 68px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      font-family: var(--font-sans);
+      background: var(--c-ivory);
+      color: var(--c-navy-900);
+      line-height: 1.65;
+      font-size: 14px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    input,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .grid {
+      display: grid;
+    }
+
+    .items-center {
+      align-items: center;
+    }
+
+    .justify-between {
+      justify-content: space-between;
+    }
+
+    .w-full {
+      width: 100%;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .muted {
+      color: var(--c-slate-500);
+      font-size: 13px;
+    }
+
+    .small {
+      font-size: 12px;
+    }
+
+    .h1 {
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .h2 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .h3 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .h4 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .badge-gold {
+      background: var(--c-gold-100);
+      color: var(--c-gold-600);
+    }
+
+    .badge-success {
+      background: var(--c-success-50);
+      color: var(--c-success);
+    }
+
+    .badge-warning {
+      background: var(--c-warning-50);
+      color: var(--c-warning);
+    }
+
+    .badge-error {
+      background: var(--c-error-50);
+      color: var(--c-error);
+    }
+
+    .badge-info {
+      background: var(--c-info-50);
+      color: var(--c-info);
+    }
+
+    .badge-slate {
+      background: var(--c-slate-100);
+      color: var(--c-slate-700);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: var(--r-md);
+      font-weight: 600;
+      font-size: 14px;
+      transition: all .18s ease;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .btn:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+
+    .btn-primary {
+      background: var(--c-navy-800);
+      color: #fff;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--c-gold), var(--c-gold-600));
+      color: #fff;
+    }
+
+    .btn-gold:hover:not(:disabled) {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(201, 169, 110, .35);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--c-navy-800);
+      border: 1px solid var(--c-slate-200);
+    }
+
+    .btn-ghost:hover {
+      background: var(--c-slate-100);
+    }
+
+    .btn-success {
+      background: var(--c-success);
+      color: #fff;
+    }
+
+    .btn-outline {
+      border: 1px solid var(--c-navy-800);
+      color: var(--c-navy-800);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: var(--c-navy-800);
+      color: #fff;
+    }
+
+    .btn-sm {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+
+    .btn-lg {
+      padding: 14px 28px;
+      font-size: 16px;
+    }
+
+    .btn-block {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .input,
+    .select,
+    .textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid var(--c-slate-200);
+      border-radius: var(--r-md);
+      background: #fff;
+      transition: border .15s, box-shadow .15s;
+    }
+
+    .input:focus,
+    .select:focus,
+    .textarea:focus {
+      outline: none;
+      border-color: var(--c-gold);
+      box-shadow: 0 0 0 3px var(--c-gold-100);
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--c-slate-700);
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: var(--r-lg);
+      padding: 24px;
+      border: 1px solid var(--c-slate-100);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .card-hover {
+      transition: all .2s;
+      cursor: pointer;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--c-gold-400);
+    }
+
+    .card-title {
+      font-size: 14px;
+      color: var(--c-slate-500);
+      margin-bottom: 8px;
+    }
+
+    .card-value {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--c-navy-900);
+    }
+
+    /*  FIX: wrapper با ارتفاع ثابت برای نمودارها (جلوگیری از رشد بی‌نهایت) */
+    .chart-box {
+      position: relative;
+      height: 280px;
+      width: 100%;
+    }
+
+    /*  تصاویر واقعی با fallback هوشمند */
+    .photo {
+      position: relative;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      height: 240px;
+      background: linear-gradient(135deg, var(--c-slate-100), var(--c-slate-200));
+    }
+
+    .photo::before {
+      content: "تصویر واقعی مجتمع مهستان — برای نمایش، پوشه images را کنار فایل کپی کنید";
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--c-slate-500);
+      font-size: 12px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .photo img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .photo img.img-missing {
+      display: none;
+    }
+
+    .photo figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 26px 14px 10px;
+      background: linear-gradient(transparent, rgba(10, 24, 40, .85));
+      color: #fff;
+      font-size: 12px;
+      z-index: 2;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .spinner {
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(255, 255, 255, .4);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+      display: inline-block;
+    }
+
+    .spinner.dark {
+      border-color: var(--c-slate-200);
+      border-top-color: var(--c-gold);
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    .public-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, .95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--c-slate-100);
+    }
+
+    .public-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: var(--header-h);
+      padding: 0 32px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--c-navy-900);
+    }
+
+    .logo-mark {
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, var(--c-navy-800), var(--c-charcoal));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--c-gold);
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      color: var(--c-slate-700);
+      font-weight: 500;
+      transition: all .15s;
+      cursor: pointer;
+    }
+
+    .nav-links a:hover {
+      background: var(--c-slate-100);
+      color: var(--c-navy-900);
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    /* 🖼️ HERO با عکس واقعی نمای شب مهستان */
+    .hero {
+      position: relative;
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      color: #fff;
+      background-color: var(--c-navy-900);
+      background-image: linear-gradient(135deg, rgba(10, 24, 40, .92), rgba(10, 24, 40, .55) 55%, rgba(10, 24, 40, .78)), url('images/mahestan-1.jpg');
+      background-size: cover;
+      background-position: center bottom;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 780px;
+      padding: 0 64px;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(201, 169, 110, .15);
+      border: 1px solid rgba(201, 169, 110, .3);
+      border-radius: 999px;
+      color: var(--c-gold-400);
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, var(--c-gold-400), var(--c-gold));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, .78);
+      margin-bottom: 36px;
+      max-width: 560px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .hero-stats {
+      position: absolute;
+      bottom: 48px;
+      left: 64px;
+      right: 64px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      z-index: 2;
+    }
+
+    .hero-stat {
+      padding: 16px 20px;
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 12px;
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-stat-num {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--c-gold-400);
+    }
+
+    .hero-stat-lbl {
+      font-size: 12px;
+      color: rgba(255, 255, 255, .7);
+      margin-top: 4px;
+    }
+
+    .demo-badge {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      background: var(--c-gold);
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      z-index: 999;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-title .kicker {
+      color: var(--c-gold-600);
+      font-weight: 600;
+      font-size: 13px;
+      margin-bottom: 8px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .section-title h2 {
+      font-size: 34px;
+      font-weight: 700;
+      color: var(--c-navy-900);
+    }
+
+    .stores-filter {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+    .chip {
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--c-slate-200);
+      font-size: 13px;
+      color: var(--c-slate-700);
+      cursor: pointer;
+      transition: all .15s;
+      font-weight: 500;
+    }
+
+    .chip:hover {
+      border-color: var(--c-gold);
+    }
+
+    .chip.active {
+      background: var(--c-navy-800);
+      color: #fff;
+      border-color: var(--c-navy-800);
+    }
+
+    .stores-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .store-card {
+      background: #fff;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      border: 1px solid var(--c-slate-100);
+      transition: all .22s;
+      cursor: pointer;
+    }
+
+    .store-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--c-gold-400);
+    }
+
+    .store-thumb {
+      height: 160px;
+      background: linear-gradient(135deg, var(--c-slate-100), var(--c-slate-200));
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .store-thumb::after {
+      content: "تصویر نمونه Demo";
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(0, 0, 0, .6);
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 10px;
+    }
+
+    .store-logo {
+      position: absolute;
+      top: -24px;
+      right: 16px;
+      width: 64px;
+      height: 64px;
+      border-radius: 12px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--c-navy-800);
+      box-shadow: var(--shadow-md);
+      border: 2px solid #fff;
+    }
+
+    .store-body {
+      padding: 20px;
+      padding-top: 36px;
+    }
+
+    .store-name {
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .store-cat {
+      color: var(--c-slate-500);
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .store-meta {
+      display: flex;
+      gap: 12px;
+      font-size: 12px;
+      color: var(--c-slate-500);
+      border-top: 1px solid var(--c-slate-100);
+      padding-top: 12px;
+      margin-top: 8px;
+    }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .kpi {
+      background: #fff;
+      padding: 28px;
+      border-radius: var(--r-lg);
+      border: 1px solid var(--c-slate-100);
+      text-align: center;
+    }
+
+    .kpi-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--c-gold-100), var(--c-gold-400));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 14px;
+      font-size: 24px;
+      color: var(--c-gold-600);
+    }
+
+    .kpi-num {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--c-navy-900);
+    }
+
+    .kpi-lbl {
+      color: var(--c-slate-500);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .footer {
+      background: var(--c-navy-900);
+      color: rgba(255, 255, 255, .7);
+      padding: 56px 0 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 32px;
+    }
+
+    .footer h4 {
+      color: #fff;
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+
+    .footer a {
+      display: block;
+      padding: 4px 0;
+      color: rgba(255, 255, 255, .65);
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .footer a:hover {
+      color: var(--c-gold-400);
+    }
+
+    .footer-bottom {
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .auth-wrap {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .auth-visual {
+      background-color: var(--c-navy-900);
+      background-image: linear-gradient(160deg, rgba(10, 24, 40, .94), rgba(15, 31, 56, .88)), url('images/mahestan-2.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .auth-visual-content {
+      position: relative;
+      z-index: 2;
+      max-width: 420px;
+    }
+
+    .auth-visual h2 {
+      font-size: 32px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .auth-visual p {
+      color: rgba(255, 255, 255, .75);
+      font-size: 15px;
+    }
+
+    .auth-features {
+      margin-top: 32px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .auth-feature {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .auth-feature-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: rgba(201, 169, 110, .15);
+      color: var(--c-gold-400);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .auth-form-wrap {
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #fff;
+    }
+
+    .auth-form {
+      max-width: 400px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .auth-form h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .auth-form .sub {
+      color: var(--c-slate-500);
+      margin-bottom: 32px;
+    }
+
+    .otp-boxes {
+      display: flex;
+      gap: 10px;
+      direction: ltr;
+      justify-content: center;
+      margin: 24px 0;
+    }
+
+    .otp-box {
+      width: 52px;
+      height: 58px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      border: 2px solid var(--c-slate-200);
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .otp-box:focus {
+      border-color: var(--c-gold);
+      outline: none;
+      box-shadow: 0 0 0 3px var(--c-gold-100);
+    }
+
+    .demo-hint {
+      background: var(--c-gold-100);
+      color: var(--c-gold-600);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 16px;
+      border: 1px dashed var(--c-gold-400);
+    }
+
+    .portal-layout {
+      display: grid;
+      grid-template-columns: var(--sidebar-w) 1fr;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      background: #fff;
+      border-left: 1px solid var(--c-slate-100);
+      padding: 20px 14px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    .sidebar-section {
+      margin-bottom: 20px;
+    }
+
+    .sidebar-title {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--c-slate-400);
+      padding: 8px 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .sidebar-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 12px;
+      border-radius: 8px;
+      color: var(--c-slate-700);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 2px;
+      cursor: pointer;
+      transition: all .15s;
+    }
+
+    .sidebar-item:hover {
+      background: var(--c-slate-100);
+    }
+
+    .sidebar-item.active {
+      background: var(--c-navy-800);
+      color: #fff;
+    }
+
+    .sidebar-item .ico {
+      width: 18px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .sidebar-item .count {
+      margin-right: auto;
+      background: var(--c-error);
+      color: #fff;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 999px;
+    }
+
+    .sidebar-item.active .count {
+      background: var(--c-gold);
+    }
+
+    .portal-main {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .topbar {
+      background: #fff;
+      border-bottom: 1px solid var(--c-slate-100);
+      padding: 0 28px;
+      height: var(--header-h);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .topbar .breadcrumb {
+      color: var(--c-slate-500);
+      font-size: 13px;
+    }
+
+    .topbar .breadcrumb strong {
+      color: var(--c-navy-900);
+    }
+
+    .topbar-right {
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .global-search {
+      position: relative;
+    }
+
+    .global-search input {
+      width: 320px;
+      padding: 8px 14px 8px 36px;
+      border-radius: 10px;
+      background: var(--c-slate-100);
+      border: 1px solid transparent;
+    }
+
+    .global-search input:focus {
+      background: #fff;
+      border-color: var(--c-gold);
+    }
+
+    .global-search::before {
+      content: "🔍";
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 13px;
+      opacity: .5;
+    }
+
+    .icon-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--c-slate-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      cursor: pointer;
+      transition: all .15s;
+    }
+
+    .icon-btn:hover {
+      background: var(--c-slate-200);
+    }
+
+    .icon-btn .dot {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 8px;
+      height: 8px;
+      background: var(--c-error);
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
+    .user-chip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 4px 12px 4px 4px;
+      border-radius: 999px;
+      background: var(--c-slate-100);
+      cursor: pointer;
+    }
+
+    .user-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--c-navy-800), var(--c-charcoal));
+      color: var(--c-gold-400);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .user-chip .name {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .user-chip .role {
+      font-size: 11px;
+      color: var(--c-slate-500);
+    }
+
+    .page {
+      padding: 28px;
+      flex: 1;
+    }
+
+    .page-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .page-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--c-navy-900);
+    }
+
+    .page-subtitle {
+      color: var(--c-slate-500);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+
+    .action-banner {
+      background: linear-gradient(135deg, var(--c-navy-800), var(--c-navy-900));
+      color: #fff;
+      padding: 24px;
+      border-radius: var(--r-lg);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .action-banner-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: rgba(201, 169, 110, .2);
+      color: var(--c-gold-400);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .action-banner h3 {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .action-banner p {
+      color: rgba(255, 255, 255, .75);
+      font-size: 13px;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+    }
+
+    .table-wrap {
+      background: #fff;
+      border-radius: var(--r-lg);
+      border: 1px solid var(--c-slate-100);
+      overflow: hidden;
+    }
+
+    .table-toolbar {
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid var(--c-slate-100);
+      flex-wrap: wrap;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .table th {
+      text-align: right;
+      padding: 12px 20px;
+      background: var(--c-slate-100);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--c-slate-500);
+    }
+
+    .table td {
+      padding: 14px 20px;
+      border-top: 1px solid var(--c-slate-100);
+      font-size: 13px;
+      vertical-align: middle;
+    }
+
+    .table tr:hover td {
+      background: var(--c-slate-100);
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 24, 40, .55);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+      animation: fadeIn .2s;
+    }
+
+    .modal {
+      background: #fff;
+      border-radius: var(--r-xl);
+      max-width: 520px;
+      width: 100%;
+      max-height: 90vh;
+      overflow: auto;
+      animation: slideUp .25s;
+    }
+
+    .modal-header {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--c-slate-100);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .modal-body {
+      padding: 24px;
+    }
+
+    .modal-footer {
+      padding: 16px 24px;
+      border-top: 1px solid var(--c-slate-100);
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+
+    .toast-container {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      z-index: 1100;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .toast {
+      background: #fff;
+      border-radius: 12px;
+      padding: 14px 18px;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      min-width: 280px;
+      border-right: 4px solid var(--c-success);
+      animation: slideInR .3s;
+    }
+
+    .toast.error {
+      border-right-color: var(--c-error);
+    }
+
+    .toast.info {
+      border-right-color: var(--c-info);
+    }
+
+    .dcc {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 900;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: var(--shadow-xl);
+      padding: 12px;
+      border: 1px solid var(--c-slate-200);
+      width: 260px;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .dcc.min {
+      width: auto;
+      padding: 0;
+    }
+
+    .dcc-toggle {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--c-navy-800), var(--c-charcoal));
+      color: var(--c-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .dcc h4 {
+      font-size: 13px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .dcc h4 .badge {
+      font-size: 9px;
+    }
+
+    .dcc-role {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+
+    .dcc-role button {
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-align: right;
+      font-size: 12px;
+      font-weight: 500;
+      border: 1px solid var(--c-slate-100);
+      background: #fff;
+      color: var(--c-slate-700);
+      transition: all .15s;
+    }
+
+    .dcc-role button:hover {
+      background: var(--c-slate-100);
+    }
+
+    .dcc-role button.active {
+      background: var(--c-navy-800);
+      color: #fff;
+      border-color: var(--c-navy-800);
+    }
+
+    .dcc-section {
+      padding: 6px 10px;
+      border-radius: 6px;
+      background: var(--c-slate-100);
+      margin-bottom: 4px;
+      cursor: pointer;
+      display: block;
+      text-align: right;
+      font-size: 11px;
+    }
+
+    .dcc-section:hover {
+      background: var(--c-gold-100);
+      color: var(--c-gold-600);
+    }
+
+    .dcc-divider {
+      padding-top: 10px;
+      border-top: 1px solid var(--c-slate-100);
+      margin-top: 8px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @keyframes slideInR {
+      from {
+        opacity: 0;
+        transform: translateX(-30px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0)
+      }
+    }
+
+    .timeline {
+      position: relative;
+      padding-right: 28px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: var(--c-slate-200);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-bottom: 24px;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      right: -28px;
+      top: 6px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #fff;
+      border: 3px solid var(--c-gold);
+      z-index: 2;
+    }
+
+    .timeline-item.current::before {
+      background: var(--c-gold);
+    }
+
+    .timeline-card {
+      background: #fff;
+      border: 1px solid var(--c-slate-100);
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .floor-tabs {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .floor-tab {
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: #fff;
+      border: 1px solid var(--c-slate-200);
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .floor-tab.active {
+      background: var(--c-navy-800);
+      color: #fff;
+      border-color: var(--c-navy-800);
+    }
+
+    .floor-map {
+      background: #fff;
+      border-radius: var(--r-lg);
+      border: 1px solid var(--c-slate-100);
+      padding: 20px;
+      position: relative;
+      height: 420px;
+      background-image: linear-gradient(var(--c-slate-100) 1px, transparent 1px), linear-gradient(90deg, var(--c-slate-100) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    .map-unit {
+      position: absolute;
+      background: #fff;
+      border: 1px solid var(--c-slate-200);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 11px;
+      cursor: pointer;
+      transition: all .15s;
+    }
+
+    .map-unit:hover {
+      transform: scale(1.05);
+      box-shadow: var(--shadow-md);
+      border-color: var(--c-gold);
+    }
+
+    .map-unit.cat-fashion {
+      background: #fef3c7;
+      border-color: #fbbf24;
+    }
+
+    .map-unit.cat-food {
+      background: #fce7f3;
+      border-color: #f472b6;
+    }
+
+    .map-unit.cat-service {
+      background: #dbeafe;
+      border-color: #60a5fa;
+    }
+
+    .empty {
+      padding: 48px 24px;
+      text-align: center;
+      color: var(--c-slate-500);
+    }
+
+    .empty-icon {
+      font-size: 48px;
+      margin-bottom: 12px;
+      opacity: .5;
+    }
+
+    .empty h3 {
+      color: var(--c-slate-700);
+      margin-bottom: 6px;
+    }
+
+    @media(max-width:1024px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .auth-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .auth-visual {
+        display: none;
+      }
+
+      .portal-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: -280px;
+        width: 280px;
+        z-index: 200;
+        transition: right .25s;
+      }
+
+      .sidebar.open {
+        right: 0;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .global-search input {
+        width: 180px;
+      }
+    }
+
+    @media(max-width:640px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero-inner {
+        padding: 0 24px;
+      }
+
+      .hero-stats {
+        left: 24px;
+        right: 24px;
+        bottom: 24px;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .stores-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar {
+        padding: 0 16px;
+      }
+
+      .page {
+        padding: 16px;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+      }
+
+      .global-search input {
+        width: 120px;
+      }
+
+      .h1 {
+        font-size: 26px;
+      }
+
+      .h2 {
+        font-size: 20px;
+      }
+
+      .section {
+        padding: 48px 0;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--c-slate-100);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--c-slate-400);
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="app"></div>
+  <div class="toast-container" id="toasts"></div>
+
+  <script>
+    /* =============================================================================
+       MAHESTAN DIGITAL PLATFORM - Vanilla JS SPA (بدون React / بدون Babel)
+       ============================================================================= */
+
+    /* ---------- 1. CONFIG & MOCK DATA ---------- */
+    const CONFIG = {
+      mallName: "مجتمع تجاری مهستان",
+      mallLocation: "کرج، بلوار طالقانی شمالی",
+      mallPhone: "026-32200000",
+      mallEmail: "info@mahestan-mall.ir",
+      workHours: "هر روز ۱۰:۰۰ تا ۲۲:۰۰",
+    };
+
+    const MOCK = {
+      users: [
+        { id: "u1", name: "علی رضایی", mobile: "09121234567", role: "owner", ownerId: "o1", unitLabel: "A-101", avatar: "ع.ر" },
+        { id: "u2", name: "مریم احمدی", mobile: "09122345678", role: "owner", ownerId: "o2", unitLabel: "A-204", avatar: "م.ا" },
+        { id: "u3", name: "محمد کریمی", mobile: "09123456789", role: "owner", ownerId: "o3", unitLabel: "B-305", avatar: "م.ک" },
+        { id: "u4", name: "محسن شیبانی", mobile: "09124567890", role: "manager", avatar: "م.ش" },
+        { id: "u5", name: "دکتر محمدی", mobile: "09125678901", role: "board", avatar: "د.م" },
+        { id: "u6", name: "فاطمه نوری", mobile: "09126789012", role: "finance", avatar: "ف.ن" },
+        { id: "u7", name: "ادمین سیستم", mobile: "09120000000", role: "admin", avatar: "ا.س" },
+      ],
+      properties: [
+        { id: "p1", ownerId: "o1", unit: "A-101", floor: "همکف", type: "تجاری", area: 45, share: 2.5, debt: 8450000, status: "بدهی معوق", tenant: null },
+        { id: "p2", ownerId: "o1", unit: "B-215", floor: "دوم", type: "انباری", area: 12, share: 0.5, debt: 0, status: "تسویه", tenant: null },
+        { id: "p3", ownerId: "o2", unit: "A-204", floor: "دوم", type: "تجاری", area: 62, share: 3.2, debt: 0, status: "تسویه", tenant: "شرکت پارسیان" },
+        { id: "p4", ownerId: "o3", unit: "B-305", floor: "سوم", type: "اداری", area: 85, share: 4.1, debt: 12500000, status: "بدهی معوق", tenant: null },
+      ],
+      invoices: [
+        { id: "inv1", ownerId: "o1", period: "مرداد ۱۴۰۴", type: "شارژ ماهانه", amount: 4850000, due: "1404/05/31", status: "پرداخت نشده" },
+        { id: "inv2", ownerId: "o1", period: "تیر ۱۴۰۴", type: "شارژ ماهانه", amount: 4850000, due: "1404/04/31", status: "پرداخت نشده" },
+        { id: "inv3", ownerId: "o1", period: "خرداد ۱۴۰۴", type: "شارژ ماهانه", amount: 4850000, due: "1404/03/31", status: "پرداخت شده" },
+        { id: "inv4", ownerId: "o3", period: "مرداد ۱۴۰۴", type: "شارژ ماهانه", amount: 6750000, due: "1404/05/31", status: "پرداخت نشده" },
+        { id: "inv5", ownerId: "o3", period: "تیر ۱۴۰", type: "هزینه تعمیرات", amount: 5750000, due: "1404/04/31", status: "پرداخت نشده" },
+      ],
+      stores: [
+        { id: "s1", name: "بوتیک الگانس", category: "پوشاک", floor: "همکف", unit: "A-101", hours: "۱۰-۲۲", desc: "مجموعه پوشاک لوکس مردانه و زنانه", initial: "ال" },
+        { id: "s2", name: "گالری طلا زرین", category: "طلا و جواهر", floor: "اول", unit: "B-115", hours: "۱۰-۲۲", desc: "انواع طلا و جواهرات با ضمانت اصالت", initial: "زر" },
+        { id: "s3", name: "کافه آروما", category: "کافه", floor: "دوم", unit: "C-201", hours: "۹-۲۳", desc: "قهوه تخصصی، کیک و دسر", initial: "آ" },
+        { id: "s4", name: "دیجیتال لند", category: "دیجیتال", floor: "اول", unit: "D-122", hours: "۱۰-۲۲", desc: "فروش موبایل، لپ‌تاپ و لوازم جانبی", initial: "د" },
+        { id: "s5", name: "رستوران سنتی باران", category: "رستوران", floor: "سوم", unit: "E-301", hours: "۱۲-۲۳", desc: "غذاهای ایرانی اصیل در فضایی سنتی", initial: "ب" },
+        { id: "s6", name: "آرایشگاه لوکس پاریس", category: "زیبایی", floor: "دوم", unit: "F-214", hours: "۱۰-۲۱", desc: "خدمات تخصصی زیبایی و مو", initial: "پ" },
+        { id: "s7", name: "دنیای کودک", category: "کودک", floor: "دوم", unit: "G-220", hours: "۱۰-۲۲", desc: "لباس و اسباب‌بازی کودک", initial: "دک" },
+        { id: "s8", name: "خانه و زندگی", category: "لوازم خانه", floor: "سوم", unit: "H-308", hours: "۱۰-۲۲", desc: "دکوراسیون، مبلمان و لوازم منزل", initial: "خ" },
+      ],
+      events: [
+        { id: "e1", title: "نمایشگاه صنایع دستی نوروزی", date: "۱۴۴/۱/۲۰", location: "طبقه همکف - سالن اصلی", desc: "نمایشگاه بزرگ صنایع دستی", category: "نمایشگاه" },
+        { id: "e2", title: "کنسرت موسیقی سنتی", date: "۱۴۰۴/۰۷/۱۵", location: "طبقه سوم", desc: "اجرای زنده گروه موسیقی", category: "فرهنگی" },
+        { id: "e3", title: "جشنواره تخفیفات پاییزه", date: "۱۴۰۴/۰۷/۰۱ تا ۱۴۰۴/۰۷/۳۰", location: "تمامی فروشگاه‌ها", desc: "تا ۵۰٪ تخفیف", category: "تخفیف" },
+      ],
+      news: [
+        { id: "n1", title: "افتتاح فودکورت جدید در طبقه سوم", date: "۱۴۴/۰/۲۸", cat: "خبر", excerpt: "فودکورت جدید با ۱۲ رستوران متنوع افتتاح شد." },
+        { id: "n2", title: "تغییر ساعات کاری پارکینگ", date: "۱۴۴/۰/۲۵", cat: "اطلاعیه", excerpt: "ساعات پارکینگ تا ساعت ۲۴ تمدید شد." },
+        { id: "n3", title: "برگزاری جشنواره بازگشت به مدرسه", date: "۱۴۰۴/۰۶/۱۵", cat: "رویداد", excerpt: "تخفیف ویژه فصل بازگشت به مدرسه." },
+      ],
+      notifications: [
+        { id: "nt1", title: "جلسه مجمع عمومی سالانه", body: "جلسه مجمع در تاریخ ۱۴۰۴/۰۷/۱۰ برگزار می‌شود.", category: "جلسه", priority: "high", date: "1404/06/28", roles: ["owner", "board"] },
+        { id: "nt2", title: "مهلت پرداخت شارژ مرداد", body: "لطفاً نسبت به پرداخت شارژ اقدام فرمایید.", category: "مالی", priority: "high", date: "1404/06/25", roles: ["owner"] },
+        { id: "nt3", title: "تعمیرات آسانسور برج A", body: "تعمیرات از ساعت ۸ تا ۱۲.", category: "تعمیرات", priority: "medium", date: "1404/06/20", roles: ["all"] },
+        { id: "nt4", title: "اطلاعیه خدمات پارکینگ", body: "شستشوی دوره‌ای پارکینگ.", category: "اطلاعیه", priority: "low", date: "1404/06/18", roles: ["all"] },
+      ],
+      documents: [
+        { id: "d1", title: "اساسنامه مجتمع", type: "اساسنامه", version: "3.2", date: "1403/12/15", pages: 24 },
+        { id: "d2", title: "آیین‌نامه داخلی مالکان", type: "آیین‌نامه", version: "2.1", date: "1403/09/10", pages: 12 },
+        { id: "d3", title: "قرارداد نمونه اجاره", type: "قرارداد", version: "1.4", date: "1403/06/20", pages: 8 },
+        { id: "d4", title: "صورتجلسه مجمع ۱۴۰۳", type: "صورتجلسه", version: "1.0", date: "1403/11/05", pages: 6 },
+        { id: "d5", title: "مصوبه افزایش شارژ", type: "مصوبه", version: "1.0", date: "1404/02/18", pages: 3 },
+      ],
+      bylawVersions: [
+        { v: "3.2", date: "1403/12/15", reason: "تطبیق با قوانین جدید", summary: "اضافه شدن فصل مربوط به حقوق مالکین", status: "فعلی" },
+        { v: "3.1", date: "1402/08/20", reason: "افزودن بند پارکینگ", summary: "تعیین قوانین استفاده از پارکینگ", status: "بایگانی" },
+        { v: "3.0", date: "1401/03/10", reason: "بازنگری کلی", summary: "بازنگری کلی ساختار اساسنامه", status: "بایگانی" },
+        { v: "2.0", date: "1398/11/05", reason: "اولین بازنگری", summary: "تغییرات در هیئت مدیره", status: "بایگانی" },
+        { v: "1.0", date: "1395/06/01", reason: "نسخه اولیه", summary: "اساسنامه اولیه مجتمع", status: "بایگانی" },
+      ],
+      meetings: [
+        { id: "m1", title: "جلسه مجمع عمومی سالانه", date: "1404/07/10", time: "18:00", location: "سالن کنفرانس طبقه چهارم", status: "آینده", agenda: ["گزارش مالی سال ۱۴۰", "انتخاب هیئت مدیره جدید", "تصویب بودجه ۱۴۰۴"] },
+        { id: "m2", title: "جلسه هیئت مدیره", date: "1404/07/05", time: "17:00", location: "دفتر مدیریت", status: "آینده", agenda: ["بررسی عملکرد مالی", "پروژه نوسازی لابی"] },
+        { id: "m3", title: "جلسه هیئت مدیره ماهانه", date: "1404/06/10", time: "18:00", location: "دفتر مدیریت", status: "برگزار شده", agenda: ["بررسی پروژه آسانسور"] },
+      ],
+      polls: [
+        {
+          id: "po1", title: "تغییر ساعت کار در نوروز", desc: "آیا با افزایش ساعت کار تا ۲۴ موافقید؟", ends: "1404/07/05", status: "active", options: [
+            { id: "op1", label: "موافق", votes: 142, voted: false },
+            { id: "op2", label: "مخالف", votes: 38, voted: false },
+            { id: "op3", label: "ممتنع", votes: 12, voted: false }]
+        },
+        {
+          id: "po2", title: "نصب سیستم تصفیه هوا", desc: "تصویب بودجه ۳.۵ میلیارد ریال", ends: "1404/07/15", status: "active", options: [
+            { id: "op4", label: "تصویب", votes: 178, voted: false },
+            { id: "op5", label: "رد", votes: 24, voted: false }]
+        },
+        {
+          id: "po3", title: "رضایت از خدمات نظافت", desc: "میزان رضایت شما از نظافت", ends: "1404/06/20", status: "closed", options: [
+            { id: "op6", label: "عالی", votes: 189, voted: false },
+            { id: "op7", label: "خوب", votes: 67, voted: false },
+            { id: "op8", label: "متوسط", votes: 31, voted: false },
+            { id: "op9", label: "ضعیف", votes: 12, voted: false }]
+        },
+      ],
+      tickets: [
+        {
+          id: "t1", ownerId: "o1", subject: "خرابی آسانسور برج A", category: "فنی", priority: "بالا", status: "در حال انجام", date: "1404/06/25", timeline: [
+            { time: "1404/06/25 09:15", actor: "مالک", text: "درخواست ثبت شد" },
+            { time: "1404/06/25 10:30", actor: "مدیریت", text: "ارجاع به تیم فنی" },
+            { time: "1404/06/26 14:00", actor: "فنی", text: "در حال بررسی قطعات" }]
+        },
+        {
+          id: "t2", ownerId: "o1", subject: "درخواست مجوز ورود مهمان", category: "اداری", priority: "متوسط", status: "تکمیل شده", date: "1404/06/20", timeline: [
+            { time: "1404/06/20 11:00", actor: "مالک", text: "درخواست ثبت شد" },
+            { time: "1404/06/20 12:15", actor: "مدیریت", text: "مجوز صادر شد" }]
+        },
+        {
+          id: "t3", ownerId: "o3", subject: "نشتی آب در سقف واحد", category: "فنی", priority: "بالا", status: "ثبت شد", date: "1404/06/28", timeline: [
+            { time: "1404/06/28 16:00", actor: "مالک", text: "درخواست ثبت شد" }]
+        },
+      ],
+      resolutions: [
+        { id: "r1", number: "1404-01", subject: "تصویب بودجه نوسازی لابی", date: "1404/06/15", status: "در حال اجرا", responsible: "مدیر فنی", deadline: "1404/09/30", progress: 35 },
+        { id: "r2", number: "1404-02", subject: "افزایش شارژ ماهانه", date: "1404/05/10", status: "اجرا شده", responsible: "واحد مالی", deadline: "1404/06/01", progress: 100 },
+        { id: "r3", number: "1404-03", subject: "نصب دوربین‌های امنیتی جدید", date: "1404/04/20", status: "در حال اجرا", responsible: "مدیر امنیت", deadline: "1404/07/15", progress: 70 },
+        { id: "r4", number: "1404-04", subject: "قرارداد با شرکت خدماتی", date: "1404/03/15", status: "اجرا شده", responsible: "مدیر اجرایی", deadline: "1404/04/01", progress: 100 },
+      ],
+      projects: [
+        { id: "pr1", name: "نوسازی لابی اصلی", budget: "12,500,000,000", spent: "4,375,000,000", progress: 35, status: "در حال اجرا", contractor: "شرکت معماری پارس", deadline: "1404/09/30" },
+        { id: "pr2", name: "ارتقای سیستم تهویه", budget: "8,200,000,000", spent: "5,740,000,000", progress: 70, status: "در حال اجرا", contractor: "شرکت تهویه البرز", deadline: "1404/08/15" },
+        { id: "pr3", name: "تعمیرات پارکینگ", budget: "3,800,000,000", spent: "3,800,000,000", progress: 100, status: "تکمیل شده", contractor: "شرکت عمران راه", deadline: "1404/05/20" },
+      ],
+      auditLog: [
+        { id: "a1", user: "فاطمه نوری", action: "ایجاد صورتحساب", target: "شارژ مرداد - A-101", time: "1404/06/28 10:15" },
+        { id: "a2", user: "محسن شیبانی", action: "بروزرسانی اطلاعیه", target: "تعمیرات آسانسور", time: "1404/06/28 09:30" },
+        { id: "a3", user: "دکتر محمدی", action: "تأیید مصوبه", target: "1404-03", time: "1404/06/27 18:45" },
+        { id: "a4", user: "ادمین سیستم", action: "ویرایش کاربر", target: "علی رضایی", time: "1404/06/27 14:20" },
+        { id: "a5", user: "علی رضایی", action: "پرداخت موفق", target: "فاکتور inv3", time: "1404/06/26 11:05" },
+      ],
+      /* 💰 مدل مالی کامل: درآمدها و هزینه‌های مجتمع */
+      fin: {
+        trendLabels: ["فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور"],
+        revenue: [1380, 1420, 1395, 1460, 1510, 1577],
+        expenses: [1240, 1180, 1310, 1150, 1220, 1185],
+        revenueBreakdown: [
+          { label: "شارژ ماهانه واحدها", value: 892 },
+          { label: "اجاره غرفه‌های مشاع", value: 230 },
+          { label: "درآمد پارکینگ", value: 320 },
+          { label: "تبلیغات و بیلبورد", value: 75 },
+          { label: "رویداد و نمایشگاه", value: 60 },
+        ],
+        expenseBreakdown: [
+          { label: "حقوق و دستمزد", value: 380 },
+          { label: "تاسیسات (آب/برق/گاز)", value: 210 },
+          { label: "نوسازی و تعمیر مشاعات", value: 180 },
+          { label: "نظافت و خدمات", value: 140 },
+          { label: "امنیت و نگهبانی", value: 120 },
+          { label: "نگهداری آسانسور و پله‌برقی", value: 95 },
+          { label: "بیمه و سایر", value: 60 },
+        ],
+        /* غرفه‌های مشاع (لابی و ورودی‌ها) */
+        kiosks: [
+          { name: "غرفه ۱", loc: "لابی اصلی", biz: "عطر و ادکلن", rent: 45, contract: "فعال", pay: "پرداخت شده" },
+          { name: "غرفه ۲", loc: "لابی اصلی", biz: "پاستیل و لواشک", rent: 38, contract: "فعال", pay: "پرداخت شده" },
+          { name: "غرفه ۳", loc: "ورودی شمالی", biz: "دمنوش و نوشیدنی سنتی", rent: 42, contract: "فعال", pay: "پرداخت نشده" },
+          { name: "غرفه ۴", loc: "راهرو طبقه ۲", biz: "لوازم آرایشی و بهداشتی", rent: 50, contract: "فعال", pay: "پرداخت شده" },
+          { name: "غرفه ۵", loc: "ورودی اصلی", biz: "کیوسک بانک (عابربانک)", rent: 25, contract: "فعال", pay: "پرداخت شده" },
+          { name: "غرفه ۶", loc: "نمای ورودی اصلی", biz: "بیلبورد تبلیغاتی", rent: 30, contract: "فعال", pay: "پرداخت شده" },
+        ],
+        upcomingCosts: [
+          { t: "سنگ‌فرش کف لابی اصلی", c: "۴,۲۰۰ میلیون ریال", s: "در انتظار تصویب" },
+          { t: "نورپردازی نمای ورودی", c: "۱,۸۰۰ میلیون ریال", s: "در حال اجرا" },
+          { t: "بازسازی راهروهای طبقه ۲", c: "۲,۶۰۰ میلیون ریال", s: "در انتظار تصویب" },
+          { t: "بهسازی آسانسورهای برج B", c: "۳,۵۰۰ میلیون ریال", s: "در حال اجرا" },
+        ],
+      },
+      categories: ["همه", "پوشاک", "کیف و کفش", "زیبایی", "طلا و جواهر", "لوازم خانه", "دیجیتال", "کودک", "خدمات", "رستوران", "کافه"],
+    };
+
+    const API = {
+      auth: {
+        verifyOtp: async (mobile, code) => {
+          const user = MOCK.users.find(u => u.mobile === mobile);
+          if (code === "1234" && user) return { ok: true, user };
+          return { ok: false, error: "کد اشتباه است" };
+        }
+      },
+    };
+
+    /* ---------- 2. STATE ---------- */
+    const Store = {
+      currentUser: null, authStep: 1, authMobile: "", authCode: ["", "", "", ""], authCountdown: 0,
+      paymentResult: null, currentInvoiceId: null,
+      storeFilter: { cat: "همه", floor: "همه", q: "" },
+      mapFloor: "همکف", notifFilter: "all", notifPanelOpen: false,
+      dccOpen: true, showModal: false, ticketModalId: null,
+      toasts: [], charts: {},
+    };
+
+    const ICONS = {
+      dashboard: "📊", wallet: "💳", file: "📄", calendar: "📅", bell: "🔔", message: "💬",
+      support: "🎧", poll: "📊", user: "👤", logout: "🚪", search: "🔍", plus: "➕", edit: "✏️",
+      check: "✓", close: "✕", arrow: "→", arrowLeft: "←", download: "⬇", upload: "⬆",
+      store: "🏪", event: "🎭", offer: "🏷️", parking: "🅿️", map: "🗺️", phone: "📞",
+      location: "📍", clock: "🕐", settings: "⚙️", shield: "🛡️", money: "💰", chart: "📉",
+      mail: "✉️", eye: "👁️", building: "🏢", key: "🔑", users: "👥", folder: "📁", globe: "🌐", news: "📰",
+    };
+    function icon(n) { return ICONS[n] || "•"; }
+    function roleLabel(r) { return { owner: "مالک", manager: "مدیر مجتمع", board: "عضو هیئت‌مدیره", finance: "واحد مالی", admin: "مدیر سیستم" }[r] || r; }
+    function fa(n) { return (n || 0).toLocaleString("fa-IR"); }
+    function esc(s) { if (s == null) return ""; return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+
+    /* 🖼️ fallback هوشمند تصویر: jpg → png → placeholder */
+    function imgFallback(img) {
+      const src = img.getAttribute("src") || "";
+      if (src.endsWith(".jpg")) img.src = src.replace(/\.jpg$/, ".png");
+      else img.classList.add("img-missing");
+    }
+
+    function addToast(msg, type = "success") {
+      const id = Date.now() + Math.random();
+      Store.toasts.push({ id, msg, type });
+      renderToasts();
+      setTimeout(() => { Store.toasts = Store.toasts.filter(t => t.id !== id); renderToasts(); }, 3500);
+    }
+    function renderToasts() {
+      document.getElementById("toasts").innerHTML = Store.toasts.map(t =>
+        `<div class="toast ${t.type}"><span>${t.type === "success" ? "✓" : t.type === "error" ? "✕" : "ℹ"}</span><span>${esc(t.msg)}</span></div>`).join("");
+    }
+
+    /* ---------- 3. ROUTER ---------- */
+    function navigate(route) { window.location.hash = "#/" + route; }
+    function login(user) {
+      Store.currentUser = user;
+      Store.authStep = 1; Store.authCode = ["", "", "", ""]; Store.authMobile = ""; Store.paymentResult = null;
+      addToast("ورود موفقیت‌آمیز");
+      goDashboard();
+    }
+    function logout() { Store.currentUser = null; addToast("از حساب خارج شدید", "info"); navigate("public/home"); }
+    function goDashboard() {
+      const u = Store.currentUser; if (!u) return navigate("auth/login");
+      if (u.role === "owner") navigate("portal/dashboard");
+      else if (u.role === "board") navigate("executive/dashboard");
+      else navigate("admin/dashboard");
+    }
+    function resetDemoFinance() {
+      const st = { inv1: "پرداخت نشده", inv2: "پرداخت نشده", inv3: "پرداخت شده", inv4: "پرداخت نشده", inv5: "پرداخت نشده" };
+      MOCK.invoices.forEach(i => { if (st[i.id]) i.status = st[i.id]; });
+    }
+
+    /* ---------- 4. UI HELPERS ---------- */
+    function badge(t, v = "slate") { return `<span class="badge badge-${v}">${esc(t)}</span>`; }
+    function btn(text, o = {}) {
+      const v = o.variant || "primary";
+      const s = o.size === "sm" ? "btn-sm" : o.size === "lg" ? "btn-lg" : "";
+      const b = o.block ? "btn-block" : "";
+      const ic = o.icon ? `<span style="font-style:normal">${icon(o.icon)}</span>` : "";
+      const dis = o.disabled ? "disabled" : "";
+      const act = o.action ? `data-action="${o.action}"` : "";
+      const ext = o.extra || "";
+      const sty = o.style ? `style="${o.style}"` : "";
+      return `<button class="btn btn-${v} ${s} ${b}" ${act} ${dis} ${ext} ${sty}>${ic}${esc(text)}</button>`;
+    }
+
+    /* ---------- 5. HEADER / FOOTER ---------- */
+    function PublicHeader() {
+      const links = [
+        ["public/home", "خانه"], ["public/about", "درباره"], ["public/stores", "فروشگاه‌ها"],
+        ["public/food", "رستوران و کافه"], ["public/events", "رویدادها"], ["public/news", "اخبار"],
+        ["public/offers", "تخفیف‌ها"], ["public/visitor", "راهنمای مراجعه"], ["public/contact", "تماس با ما"],
+      ];
+      return `<header class="public-header"><nav class="public-nav">
+    <div class="logo" data-action="navigate" data-route="public/home" style="cursor:pointer">
+      <div class="logo-mark">م</div>
+      <div><div>مجتمع مهستان</div><div style="font-size:10px;color:var(--c-slate-500);font-weight:500">MAHESTAN MALL</div></div>
+    </div>
+    <div class="nav-links">${links.map(([r, l]) => `<a data-action="navigate" data-route="${r}">${l}</a>`).join("")}</div>
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="جستجو"><span>${icon("search")}</span></button>
+      ${btn("ورود مالکان", { variant: "gold", icon: "key", action: "navigate", extra: 'data-route="auth/login"' })}
+    </div></nav></header>`;
+    }
+    function PublicFooter() {
+      return `<footer class="footer"><div class="container"><div class="footer-grid">
+    <div><div class="logo" style="margin-bottom:16px;color:#fff"><div class="logo-mark">م</div><div>مجتمع مهستان</div></div>
+      <p style="font-size:13px;line-height:1.8">مجتمع تجاری مهستان کرج، مقصدی مدرن برای خرید، تفریح و کسب‌وکار.</p></div>
+    <div><h4>دسترسی سریع</h4><a>درباره مجتمع</a><a>فروشگاه‌ها</a><a>رویدادها</a><a>تماس با ما</a></div>
+    <div><h4>خدمات</h4><a>پارکینگ</a><a>نقشه طبقات</a><a>راهنمای مراجعه</a><a>پرسش‌های متداول</a></div>
+    <div><h4>ارتباط</h4><a>${esc(CONFIG.mallLocation)}</a><a>${esc(CONFIG.mallPhone)}</a><a>${esc(CONFIG.mallEmail)}</a></div>
+  </div><div class="footer-bottom">© ۱۴۰۴ مجتمع تجاری مهستان کرج • تمامی حقوق محفوظ است</div></div></footer>`;
+    }
+
+    /* ---------- 6. PUBLIC PAGES ---------- */
+    function StoreCard(s) {
+      return `<div class="store-card" data-action="navigate" data-route="public/store/${s.id}">
+    <div class="store-thumb"><div class="store-logo">${esc(s.initial)}</div></div>
+    <div class="store-body"><div class="store-name">${esc(s.name)}</div><div class="store-cat">${esc(s.category)}</div>
+    <div class="store-meta"><span>🏢 ${esc(s.floor)}</span><span>🔢 ${esc(s.unit)}</span><span>🕐 ${esc(s.hours)}</span></div></div></div>`;
+    }
+
+    function ConceptualMap() {
+      const unitsByFloor = {
+        "همکف": [{ id: 1, name: "A-101 الگانس", cat: "fashion", style: "top:40px;right:60px;width:100px;height:60px" }, { id: 2, name: "A-102 زرین", cat: "fashion", style: "top:40px;right:180px;width:100px;height:60px" }, { id: 3, name: "لابی", cat: "service", style: "top:130px;right:280px;width:120px;height:80px" }, { id: 4, name: "🚻", cat: "service", style: "top:40px;right:420px;width:60px;height:60px" }, { id: 5, name: "آسانسور", cat: "service", style: "top:40px;right:500px;width:80px;height:60px" }],
+        "اول": [{ id: 1, name: "B-115 زرین", cat: "fashion", style: "top:40px;right:60px;width:120px;height:60px" }, { id: 2, name: "D-122 دیجیتال", cat: "fashion", style: "top:40px;right:200px;width:120px;height:60px" }, { id: 3, name: "آسانسور", cat: "service", style: "top:40px;right:420px;width:80px;height:60px" }],
+        "دوم": [{ id: 1, name: "C-201 آروما", cat: "food", style: "top:40px;right:60px;width:120px;height:60px" }, { id: 2, name: "F-214 پاریس", cat: "fashion", style: "top:40px;right:200px;width:100px;height:60px" }, { id: 3, name: "G-220 کودک", cat: "fashion", style: "top:40px;right:320px;width:100px;height:60px" }],
+        "سوم": [{ id: 1, name: "E-301 باران", cat: "food", style: "top:40px;right:60px;width:120px;height:60px" }, { id: 2, name: "H-308 خانه", cat: "fashion", style: "top:40px;right:200px;width:120px;height:60px" }, { id: 3, name: "فودکورت", cat: "food", style: "top:130px;right:280px;width:140px;height:80px" }],
+        "چهارم": [{ id: 1, name: "دفتر مدیریت", cat: "service", style: "top:40px;right:60px;width:140px;height:60px" }, { id: 2, name: "سالن کنفرانس", cat: "service", style: "top:40px;right:220px;width:140px;height:60px" }],
+      };
+      const floors = ["همکف", "اول", "دوم", "سوم", "چهارم"];
+      return `<div><div class="floor-tabs">${floors.map(f => `<div class="floor-tab ${Store.mapFloor === f ? "active" : ""}" data-action="map-floor" data-floor="${f}">${f}</div>`).join("")}</div>
+  <div class="floor-map">${(unitsByFloor[Store.mapFloor] || []).map(u => `<div class="map-unit cat-${u.cat}" style="${u.style}">${esc(u.name)}</div>`).join("")}
+  <div style="position:absolute;bottom:16px;left:16px;font-size:11px;color:var(--c-slate-500);display:flex;gap:14px"><span>🟡 پوشاک/طلا</span><span>🌸 رستوران/کافه</span><span>🔵 خدمات</span></div>
+  <div class="muted small" style="position:absolute;top:16px;right:16px">نمونه Demo • UI برای Indoor Map واقعی آماده است</div></div></div>`;
+    }
+
+    function PublicHome() {
+      return `
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-tag">✨ تجربه‌ای متفاوت در قلب کرج</div>
+      <h1>مجتمع مهستان؛<br/><span>نبض تجارت، آرامش خرید</span></h1>
+      <p>مجموعه‌ای از برترین برندها، رستوران‌های بی‌نظیر و فضاهای رویداد در فضایی مدرن و لوکس.</p>
+      <div class="hero-ctas">
+        ${btn("کشف فروشگاه‌ها", { variant: "gold", size: "lg", icon: "store", action: "navigate", extra: 'data-route="public/stores"' })}
+        ${btn("رویدادهای مهستان", { variant: "outline", size: "lg", icon: "event", action: "navigate", extra: 'data-route="public/events"', style: "color:#fff;border-color:rgba(255,255,255,.3)" })}
+        ${btn("ورود مالکان", { variant: "ghost", size: "lg", icon: "key", action: "navigate", extra: 'data-route="auth/login"', style: "background:rgba(255,255,255,.1);color:#fff" })}
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-num">+۴۰۰</div><div class="hero-stat-lbl">واحد تجاری</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">+۱۵۰</div><div class="hero-stat-lbl">برند معتبر</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">۵ طبقه</div><div class="hero-stat-lbl">فضای مدرن</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">+۱۰۰۰</div><div class="hero-stat-lbl">پارکینگ</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title"><div class="kicker">درباره مجتمع</div><h2>مجتمعی با استانداردهای جهانی</h2></div>
+      <div class="kpis">
+        <div class="kpi"><div class="kpi-icon">${icon("building")}</div><div class="kpi-num">۴۱۲</div><div class="kpi-lbl">واحد</div></div>
+        <div class="kpi"><div class="kpi-icon">${icon("parking")}</div><div class="kpi-num">۱۲۰۰</div><div class="kpi-lbl">پارکینگ</div></div>
+        <div class="kpi"><div class="kpi-icon">${icon("clock")}</div><div class="kpi-num">۱۲</div><div class="kpi-lbl">ساعت فعالیت</div></div>
+        <div class="kpi"><div class="kpi-icon">${icon("users")}</div><div class="kpi-num">+۵۰K</div><div class="kpi-lbl">بازدید ماهانه</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <div class="section-title"><div class="kicker">گالری تصاویر</div><h2>مهستان در تصویر</h2></div>
+      <div class="gallery-grid">
+        <figure class="photo"><img src="images/mahestan-1.jpg" alt="نمای شب مجتمع مهستان" loading="lazy" onerror="imgFallback(this)"><figcaption>نمای شب ساختمان اصلی با تابلوی نئون مهستان</figcaption></figure>
+        <figure class="photo"><img src="images/mahestan-2.jpg" alt="فضای داخلی مجتمع" loading="lazy" onerror="imgFallback(this)"><figcaption>فضای داخلی، طبقات و راهروهای تجاری</figcaption></figure>
+        <figure class="photo"><img src="images/mahestan-3.jpg" alt="ورودی اصلی در شب" loading="lazy" onerror="imgFallback(this)"><figcaption>ورودی اصلی با نورپردازی شب</figcaption></figure>
+        <figure class="photo"><img src="images/mahestan-4.jpg" alt="نمای روز مجتمع" loading="lazy" onerror="imgFallback(this)"><figcaption>نمای روز ساختمان مجتمع</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title"><div class="kicker">فروشگاه‌های شاخص</div><h2>برندهایی که دوست دارید</h2></div>
+      <div class="stores-grid">${MOCK.stores.slice(0, 4).map(StoreCard).join("")}</div>
+      <div class="text-center" style="margin-top:32px">${btn("مشاهده همه فروشگاه‌ها", { variant: "outline", action: "navigate", extra: 'data-route="public/stores"' })}</div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <div class="section-title"><div class="kicker">رویدادهای پیش‌رو</div><h2>تجربه‌های به‌یادماندنی</h2></div>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+        ${MOCK.events.map(e => `<div class="card card-hover">
+          <div style="height:140px;background:linear-gradient(135deg,var(--c-navy-800),var(--c-charcoal));border-radius:10px;margin-bottom:14px;display:flex;align-items:center;justify-content:center;color:var(--c-gold);font-size:32px">🎭</div>
+          ${badge(e.category, "gold")}<h4 style="margin:10px 0 6px">${esc(e.title)}</h4>
+          <div class="muted small">${esc(e.date)}</div><div class="muted small">${esc(e.location)}</div></div>`).join("")}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title"><div class="kicker">نقشه طبقات</div><h2>راهنمای طبقات</h2></div>
+      ${ConceptualMap()}
+    </div>
+  </section>`;
+    }
+
+    /* 🐛 FIX: رندر جزئی بخش فروشگاه‌ها (بدون پرش focus و بدون رندر کل صفحه) */
+    function storesInner() {
+      const f = Store.storeFilter;
+      const floors = ["همه", "همکف", "اول", "دوم", "سوم"];
+      const filtered = MOCK.stores.filter(s =>
+        (f.cat === "همه" || s.category === f.cat) && (f.floor === "همه" || s.floor === f.floor) && (f.q === "" || s.name.includes(f.q)));
+      return `
+    <div class="section-title"><div class="kicker">فروشگاه‌ها</div><h2>همه برندها در یک نگاه</h2></div>
+    <div style="max-width:400px;margin:0 auto 24px"><input class="input" placeholder="🔍 جستجوی برند..." value="${esc(f.q)}" data-action-input="store-q" /></div>
+    <div class="stores-filter">${MOCK.categories.map(c => `<div class="chip ${f.cat === c ? "active" : ""}" data-action="store-cat" data-cat="${c}">${c}</div>`).join("")}</div>
+    <div class="floor-tabs" style="justify-content:center;margin-bottom:24px">${floors.map(fl => `<div class="floor-tab ${f.floor === fl ? "active" : ""}" data-action="store-floor" data-floor="${fl}">${fl === "همه" ? "همه طبقات" : "طبقه " + fl}</div>`).join("")}</div>
+    <div class="stores-grid">${filtered.map(StoreCard).join("")}</div>
+    ${filtered.length === 0 ? '<div class="empty"><div class="empty-icon">🔍</div><h3>فروشگاهی یافت نشد</h3></div>' : ""}`;
+    }
+    function refreshStores(refocus) {
+      const el = document.getElementById("storesSection"); if (!el) return;
+      el.innerHTML = storesInner();
+      if (refocus) { const inp = el.querySelector('[data-action-input="store-q"]'); if (inp) { inp.focus(); const L = inp.value.length; inp.setSelectionRange(L, L); } }
+    }
+    function PublicStores() { return `<section class="section" style="padding-top:40px"><div class="container" id="storesSection">${storesInner()}</div></section>`; }
+
+    function PublicStoreDetail(id) {
+      const s = MOCK.stores.find(x => x.id === id) || MOCK.stores[0];
+      return `<section class="section" style="padding-top:40px"><div class="container" style="max-width:900px">
+    ${btn("بازگشت", { variant: "ghost", size: "sm", icon: "arrow", action: "navigate", extra: 'data-route="public/stores"' })}
+    <div class="card" style="margin-top:16px">
+      <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap">
+        <div style="width:100px;height:100px;border-radius:16px;background:var(--c-slate-100);display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:700;color:var(--c-navy-800)">${esc(s.initial)}</div>
+        <div style="flex:1;min-width:240px">${badge(s.category, "gold")}<h1 class="h2" style="margin:10px 0 6px">${esc(s.name)}</h1><p class="muted">${esc(s.desc)}</p>
+          <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:20px">
+            <div><div class="small muted">طبقه</div><div style="font-weight:600">${esc(s.floor)}</div></div>
+            <div><div class="small muted">واحد</div><div style="font-weight:600">${esc(s.unit)}</div></div>
+            <div><div class="small muted">ساعت کار</div><div style="font-weight:600">${esc(s.hours)}</div></div>
+          </div></div></div>
+      <div style="display:flex;gap:10px;margin-top:24px;flex-wrap:wrap">
+        ${btn("مشاهده روی نقشه", { icon: "map" })}${btn("تماس با فروشگاه", { variant: "ghost", icon: "phone" })}${btn("تخفیف‌های جاری", { variant: "ghost", icon: "offer" })}
+      </div></div></div></section>`;
+    }
+
+    function PublicFood() {
+      return `<section class="section" style="padding-top:40px"><div class="container">
+  <div class="section-title"><div class="kicker">رستوران و کافه</div><h2>طعم‌های دلنشین</h2></div>
+  <div class="stores-grid">${MOCK.stores.filter(s => ["رستوران", "کافه"].includes(s.category)).map(StoreCard).join("")}</div></div></section>`;
+    }
+
+    function PublicEvents() {
+      return `<section class="section" style="padding-top:40px"><div class="container">
+  <div class="section-title"><div class="kicker">تقویم رویدادها</div><h2>لحظه‌های ماندگار</h2></div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px">
+    ${MOCK.events.map(e => `<div class="card card-hover">
+      <div style="height:160px;background:linear-gradient(135deg,var(--c-navy-800),var(--c-charcoal));border-radius:12px;margin-bottom:16px;display:flex;align-items:center;justify-content:center;color:var(--c-gold);font-size:40px">🎭</div>
+      ${badge(e.category, "gold")}<h3 class="h4" style="margin:10px 0 6px">${esc(e.title)}</h3>
+      <p class="muted small" style="margin-bottom:12px">${esc(e.desc)}</p>
+      <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:16px"><div class="small">${icon("calendar")} ${esc(e.date)}</div><div class="small">${icon("location")} ${esc(e.location)}</div></div>
+      ${btn("ثبت‌نام و یادآوری", { variant: "outline", block: true })}</div>`).join("")}</div></div></section>`;
+    }
+
+    function PublicNews() {
+      return `<section class="section" style="padding-top:40px"><div class="container">
+  <div class="section-title"><div class="kicker">اخبار و اطلاعیه‌ها</div><h2>از مهستان چه خبر</h2></div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+    ${MOCK.news.map(n => `<div class="card card-hover">${badge(n.cat, n.cat === "اطلاعیه" ? "info" : n.cat === "رویداد" ? "gold" : "slate")}
+      <h3 class="h4" style="margin:10px 0 8px">${esc(n.title)}</h3><p class="muted small" style="margin-bottom:12px">${esc(n.excerpt)}</p>
+      <div class="small muted">${icon("clock")} ${esc(n.date)}</div></div>`).join("")}</div></div></section>`;
+    }
+
+    function PublicOffers() {
+      const offers = [
+        { s: "بوتیک الگانس", o: "تا ۴۰٪ تخفیف", d: "روی کلکسیون تابستانه", until: "1404/07/30" },
+        { s: "گالری زرین", o: "هدیه ویژه", d: "خرید بالای ۵۰ میلیون", until: "1404/07/15" },
+        { s: "دیجیتال لند", o: "۱۵٪ تخفیف", d: "روی گوشی‌های منتخب", until: "1404/07/20" },
+        { s: "خانه و زندگی", o: "فروش ویژه", d: "تا ۳۰٪ تخفیف مبلمان", until: "1404/07/25" },
+      ];
+      return `<section class="section" style="padding-top:40px"><div class="container">
+    <div class="section-title"><div class="kicker">تخفیف‌ها</div><h2>پیشنهادهای ویژه</h2></div>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+      ${offers.map(o => `<div class="card card-hover" style="background:linear-gradient(135deg,var(--c-gold-100),#fff)">
+        ${badge("🏷️ پیشنهاد ویژه", "gold")}<h3 class="h4" style="margin:10px 0 6px">${esc(o.s)}</h3>
+        <div class="h2" style="color:var(--c-gold-600);margin:8px 0">${esc(o.o)}</div>
+        <p class="muted">${esc(o.d)}</p><div class="small muted" style="margin-top:10px">تا ${o.until}</div></div>`).join("")}</div></div></section>`;
+    }
+
+    function PublicVisitor() {
+      const items = [
+        { i: "clock", t: "ساعات کاری", d: CONFIG.workHours }, { i: "parking", t: "پارکینگ", d: "ظرفیت ۱۲۰۰ خودرو" },
+        { i: "location", t: "آدرس", d: CONFIG.mallLocation }, { i: "phone", t: "تماس", d: CONFIG.mallPhone },
+        { i: "globe", t: "حمل‌ونقل عمومی", d: "ایستگاه مترو طالقانی" }, { i: "shield", t: "قوانین", d: "رعایت قوانین مجتمع" },
+      ];
+      return `<section class="section" style="padding-top:40px"><div class="container">
+    <div class="section-title"><div class="kicker">قبل از مراجعه</div><h2>راهنمای بازدید</h2></div>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
+      ${items.map(v => `<div class="card"><div style="width:48px;height:48px;border-radius:12px;background:var(--c-gold-100);color:var(--c-gold-600);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:12px">${icon(v.i)}</div>
+      <h3 class="h4">${esc(v.t)}</h3><p class="muted" style="margin-top:6px">${esc(v.d)}</p></div>`).join("")}</div></div></section>`;
+    }
+
+    function PublicAbout() {
+      return `<section class="section" style="padding-top:40px"><div class="container" style="max-width:900px">
+  <div class="section-title"><div class="kicker">درباره ما</div><h2>مجتمع تجاری مهستان کرج</h2></div>
+  <div class="card"><p style="font-size:16px;line-height:2;color:var(--c-slate-700)">مجتمع تجاری مهستان با بیش از دو دهه سابقه، یکی از شناخته‌شده‌ترین مراکز خرید استان البرز است.</p>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:24px">
+    <div><div class="h2" style="color:var(--c-gold-600)">+۲۰</div><div class="muted">سال سابقه</div></div>
+    <div><div class="h2" style="color:var(--c-gold-600)">۴۱۲</div><div class="muted">واحد فعال</div></div>
+    <div><div class="h2" style="color:var(--c-gold-600)">۲۴۸</div><div class="muted">مالک</div></div>
+    <div><div class="h2" style="color:var(--c-gold-600)">۱۵۰+</div><div class="muted">برند معتبر</div></div>
+  </div></div></div></section>`;
+    }
+
+    function PublicContact() {
+      return `<section class="section" style="padding-top:40px"><div class="container" style="max-width:900px">
+  <div class="section-title"><div class="kicker">تماس با ما</div><h2>در ارتباط باشیم</h2></div>
+  <div class="grid" style="grid-template-columns:1fr 1fr;gap:24px">
+    <div class="card"><h3 class="h3" style="margin-bottom:20px">اطلاعات تماس</h3>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:40px;height:40px;border-radius:10px;background:var(--c-gold-100);color:var(--c-gold-600);display:flex;align-items:center;justify-content:center">${icon("location")}</div><div><div class="small muted">آدرس</div><div>${esc(CONFIG.mallLocation)}</div></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:40px;height:40px;border-radius:10px;background:var(--c-gold-100);color:var(--c-gold-600);display:flex;align-items:center;justify-content:center">${icon("phone")}</div><div><div class="small muted">تلفن</div><div style="direction:ltr;text-align:right">${esc(CONFIG.mallPhone)}</div></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:40px;height:40px;border-radius:10px;background:var(--c-gold-100);color:var(--c-gold-600);display:flex;align-items:center;justify-content:center">${icon("mail")}</div><div><div class="small muted">ایمیل</div><div>${esc(CONFIG.mallEmail)}</div></div></div>
+      </div></div>
+    <div class="card"><h3 class="h3" style="margin-bottom:20px">ارسال پیام</h3>
+      <div class="form-group"><label class="label">نام و نام خانوادگی</label><input class="input" placeholder="نام شما" /></div>
+      <div class="form-group"><label class="label">موبایل</label><input class="input" placeholder="09XXXXXXXXX" /></div>
+      <div class="form-group"><label class="label">موضوع</label><input class="input" placeholder="عنوان پیام" /></div>
+      <div class="form-group"><label class="label">پیام</label><textarea class="textarea" rows="4" placeholder="متن پیام..."></textarea></div>
+      ${btn("ارسال پیام", { block: true })}</div>
+  </div></div></section>`;
+    }
+
+    /* ---------- 7. AUTH ---------- */
+    function AuthLogin() {
+      const s = Store;
+      const quick = MOCK.users.slice(0, 5).map(u => `<span data-action="quick-login" data-uid="${u.id}" style="padding:4px 10px;background:#fff;border-radius:6px;cursor:pointer;font-size:11px;border:1px solid var(--c-gold-400)">${esc(u.name)} <span class="muted">(${roleLabel(u.role)})</span></span>`).join("");
+      const step1 = `<form data-action-form="send-otp">
+    <div class="form-group"><label class="label">شماره موبایل</label>
+      <input class="input" type="tel" placeholder="09XXXXXXXXX" value="${esc(s.authMobile)}" data-action-input="auth-mobile" style="direction:ltr;text-align:right" maxlength="11" /></div>
+    ${btn("ارسال کد تأیید", { block: true, size: "lg", icon: "key" })}
+    <div class="demo-hint">💡 برای Demo سریع، روی یکی از نقش‌ها کلیک کنید:<br/><div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px">${quick}</div></div></form>`;
+      const boxes = s.authCode.map((c, i) => `<input class="otp-box" maxlength="1" value="${c}" data-otp-idx="${i}" />`).join("");
+      const resend = s.authCountdown > 0
+        ? `<span class="muted">ارسال مجدد تا ${Math.floor(s.authCountdown / 60)}:${String(s.authCountdown % 60).padStart(2, "0")} دیگر</span>`
+        : `<button type="button" data-action="resend-otp" style="color:var(--c-gold-600);font-weight:600">ارسال مجدد کد</button>`;
+      const step2 = `<form data-action-form="verify-otp">
+    <div class="otp-boxes">${boxes}</div>
+    <div class="demo-hint">🔑 کد آزمایشی: <strong>1234</strong></div>
+    ${btn("ورود", { block: true, size: "lg", icon: "check" })}
+    <div style="text-align:center;margin-top:16px;font-size:13px">${resend}</div>
+    <button type="button" data-action="auth-back" style="display:block;margin:12px auto 0;color:var(--c-slate-500);font-size:13px">تغییر شماره موبایل</button></form>`;
+      return `<div class="auth-wrap">
+    <div class="auth-visual">
+      <div class="logo" style="color:#fff"><div class="logo-mark">م</div><div><div>مجتمع مهستان</div><div style="font-size:10px;opacity:.6">MAHESTAN MALL</div></div></div>
+      <div class="auth-visual-content"><h2>پرتال اختصاصی مالکین</h2>
+        <p>دسترسی یکپارچه به امور مالی، اسناد، جلسات، رأی‌گیری‌ها و ارتباط با مدیریت.</p>
+        <div class="auth-features">
+          ${[{ i: "wallet", t: "مدیریت مالی", d: "پرداخت آنلاین شارژ" }, { i: "file", t: "اسناد الکترونیکی", d: "اساسنامه و قراردادها" }, { i: "poll", t: "رأی‌گیری", d: "شرکت در تصمیم‌گیری" }, { i: "support", t: "پشتیبانی", d: "ثبت درخواست و پیگیری" }].map(f => `<div class="auth-feature"><div class="auth-feature-icon">${icon(f.i)}</div><div><div style="font-weight:600">${f.t}</div><div style="font-size:13px;opacity:.75">${f.d}</div></div></div>`).join("")}
+        </div></div>
+      <div style="position:relative;z-index:2;font-size:11px;opacity:.5">© ۱۴۰۴ مجتمع تجاری مهستان</div>
+    </div>
+    <div class="auth-form-wrap"><div class="auth-form">
+      ${btn("بازگشت به سایت", { variant: "ghost", size: "sm", icon: "arrow", action: "navigate", extra: 'data-route="public/home"' })}
+      <h1 style="margin-top:24px">ورود به پرتال</h1>
+      <p class="sub">${s.authStep === 1 ? "شماره موبایل خود را وارد کنید" : "کد ارسال‌شده به " + esc(s.authMobile) + " را وارد نمایید"}</p>
+      ${s.authStep === 1 ? step1 : step2}
+    </div></div></div>`;
+    }
+
+    /* ---------- 8. PORTAL SHELL ---------- */
+    function PortalShell(content, role, title) {
+      const u = Store.currentUser; if (!u) return "";
+      const ownerMenu = [
+        { k: "portal/dashboard", label: "داشبورد", icon: "dashboard" }, { k: "portal/properties", label: "املاک من", icon: "building" },
+        { k: "portal/finance", label: "امور مالی", icon: "wallet" }, { k: "portal/invoices", label: "صورتحساب‌ها", icon: "money" },
+        { k: "portal/documents", label: "اسناد", icon: "file" }, { k: "portal/bylaws", label: "اساسنامه", icon: "folder" },
+        { k: "portal/meetings", label: "جلسات", icon: "calendar" }, { k: "portal/voting", label: "رأی‌گیری", icon: "poll", count: 2 },
+        { k: "portal/notifications", label: "اعلان‌ها", icon: "bell", count: 3 }, { k: "portal/messages", label: "پیام‌ها", icon: "message" },
+        { k: "portal/requests", label: "درخواست‌ها", icon: "support" }, { k: "portal/surveys", label: "نظرسنجی", icon: "poll" },
+        { k: "portal/calendar", label: "تقویم", icon: "calendar" }, { k: "portal/profile", label: "پروفایل من", icon: "user" },
+      ];
+      const boardMenu = [
+        { k: "executive/dashboard", label: "داشبورد فرماندهی", icon: "dashboard" },
+        { k: "executive/financial", label: "مدل مالی مجتمع", icon: "money" },
+        { k: "executive/resolutions", label: "مصوبات", icon: "file" },
+        { k: "executive/projects", label: "پروژه‌ها", icon: "building" },
+        { k: "executive/meetings", label: "جلسات", icon: "calendar" },
+      ];
+      const adminMenu = [
+        { k: "admin/dashboard", label: "داشبورد مدیریتی", icon: "dashboard" },
+        { k: "admin/finance", label: "مدل مالی مجتمع", icon: "money" },
+        { k: "admin/owners", label: "مدیریت مالکین", icon: "users" }, { k: "admin/properties", label: "واحدها", icon: "building" },
+        { k: "admin/documents", label: "اسناد", icon: "file" }, { k: "admin/meetings", label: "جلسات", icon: "calendar" },
+        { k: "admin/resolutions", label: "مصوبات", icon: "folder" }, { k: "admin/voting", label: "رأی‌گیری", icon: "poll" },
+        { k: "admin/tickets", label: "درخواست‌ها", icon: "support" }, { k: "admin/notifications", label: "اعلان‌ها", icon: "bell" },
+        { k: "admin/cms", label: "مدیریت محتوا", icon: "globe" }, { k: "admin/media", label: "کتابخانه رسانه", icon: "folder" },
+        { k: "admin/roles", label: "نقش‌ها و دسترسی‌ها", icon: "shield" }, { k: "admin/audit", label: "Audit Log", icon: "eye" },
+        { k: "admin/settings", label: "تنظیمات", icon: "settings" },
+      ];
+      const menu = role === "owner" ? ownerMenu : role === "board" ? boardMenu : adminMenu;
+      const portalLabel = role === "owner" ? "پرتال مالکین" : role === "board" ? "هیئت‌مدیره" : "پنل مدیریت";
+      const route = window.location.hash.replace(/^#\/?/, "") || "portal/dashboard";
+      const profileRoute = u.role === "owner" ? "portal/profile" : "admin/settings";
+      return `<div class="portal-layout">
+    <aside class="sidebar">
+      <div style="padding:4px 8px 16px;border-bottom:1px solid var(--c-slate-100);margin-bottom:16px">
+        <div class="logo" data-action="navigate" data-route="public/home" style="cursor:pointer">
+          <div class="logo-mark">م</div>
+          <div><div style="font-size:14px">مجتمع مهستان</div><div style="font-size:10px;color:var(--c-slate-500);font-weight:500">${portalLabel}</div></div></div></div>
+      <div class="sidebar-section"><div class="sidebar-title">منوی اصلی</div>
+        ${menu.map(m => `<div class="sidebar-item ${route === m.k ? "active" : ""}" data-action="navigate" data-route="${m.k}">
+          <span class="ico">${icon(m.icon)}</span><span>${m.label}</span>${m.count ? `<span class="count">${m.count}</span>` : ""}</div>`).join("")}</div>
+      <div class="sidebar-section"><div class="sidebar-title">عمومی</div>
+        <div class="sidebar-item" data-action="navigate" data-route="public/home"><span class="ico">${icon("globe")}</span><span>سایت مجتمع</span></div>
+        <div class="sidebar-item" data-action="logout"><span class="ico">${icon("logout")}</span><span>خروج</span></div></div>
+    </aside>
+    <div class="portal-main">
+      <div class="topbar">
+        <div class="breadcrumb"><span class="muted">${portalLabel}</span> / <strong>${title}</strong></div>
+        <div class="topbar-right">
+          <div class="global-search"><input placeholder="جستجو در پرتال..." /></div>
+          <div class="icon-btn" data-action="toggle-notif-panel" aria-label="اعلان‌ها">${icon("bell")}<span class="dot"></span></div>
+          <div class="user-chip" data-action="navigate" data-route="${profileRoute}">
+            <div class="user-avatar">${u.avatar}</div>
+            <div><div class="name">${esc(u.name)}</div><div class="role">${roleLabel(u.role)}</div></div></div>
+        </div></div>
+      <div class="page">${content}</div>
+    </div>
+    ${Store.notifPanelOpen ? NotificationsPanel() : ""}</div>`;
+    }
+
+    function NotificationsPanel() {
+      const u = Store.currentUser;
+      const cats = ["all", "مالی", "جلسه", "مصوبه", "تعمیرات", "اطلاعیه", "پیام", "اضطراری"];
+      const list = MOCK.notifications.filter(n => n.roles.includes(u.role) || n.roles.includes("all"));
+      const filtered = Store.notifFilter === "all" ? list : list.filter(n => n.category === Store.notifFilter);
+      return `<div data-action="close-notif-panel" style="position:fixed;inset:0;z-index:80"></div>
+  <div style="position:fixed;top:72px;left:20px;width:380px;max-height:80vh;background:#fff;border-radius:16px;box-shadow:var(--shadow-xl);z-index:90;overflow:hidden">
+    <div style="padding:16px;border-bottom:1px solid var(--c-slate-100);display:flex;align-items:center;justify-content:space-between">
+      <h3 class="h4">مرکز اعلان‌ها</h3>
+      <button data-action="mark-all-read" style="font-size:12px;color:var(--c-gold-600);font-weight:600">خواندن همه</button></div>
+    <div style="padding:8px 12px;display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--c-slate-100)">
+      ${cats.map(c => `<button data-action="notif-filter" data-cat="${c}" style="padding:4px 10px;border-radius:999px;font-size:11px;background:${Store.notifFilter === c ? "var(--c-navy-800)" : "var(--c-slate-100)"};color:${Store.notifFilter === c ? "#fff" : "var(--c-slate-700)"}">${c === "all" ? "همه" : c}</button>`).join("")}</div>
+    <div style="max-height:420px;overflow:auto">
+      ${filtered.map(n => `<div style="padding:14px;border-bottom:1px solid var(--c-slate-100);cursor:pointer" data-action="close-notif-panel">
+        <div style="display:flex;justify-content:space-between;margin-bottom:4px">${badge(n.category, n.priority === "high" ? "error" : n.priority === "medium" ? "warning" : "slate")}<span class="small muted">${esc(n.date)}</span></div>
+        <div style="font-weight:600;font-size:13px">${esc(n.title)}</div><div class="small muted" style="margin-top:4px">${esc(n.body)}</div></div>`).join("")}</div></div>`;
+    }
+
+    /* ---------- 9. OWNER PAGES ---------- */
+    function OwnerDashboard() {
+      const u = Store.currentUser;
+      const invoices = MOCK.invoices.filter(i => i.ownerId === u.ownerId);
+      const props = MOCK.properties.filter(p => p.ownerId === u.ownerId);
+      const totalDebt = invoices.filter(i => i.status !== "پرداخت شده").reduce((s, i) => s + i.amount, 0);
+      const cur = invoices.find(i => i.status !== "پرداخت شده");
+      const unpaid = invoices.filter(i => i.status !== "پرداخت شده").length;
+      const banner = unpaid > 0 ? `<div class="action-banner">
+    <div class="action-banner-icon">${icon("alert")}</div>
+    <div style="flex:1"><h3>شما ${unpaid} اقدام مهم دارید</h3><p>پرداخت ${fa(totalDebt)} ریال بدهی معوق</p></div>
+    ${btn("پرداخت شارژ", { variant: "gold", action: "navigate", extra: 'data-route="portal/invoices"' })}
+    ${btn("جلسات", { variant: "ghost", style: "background:rgba(255,255,255,.1);color:#fff", action: "navigate", extra: 'data-route="portal/meetings"' })}</div>` : "";
+      return `<div>
+    <div style="background:linear-gradient(135deg,var(--c-navy-800),var(--c-charcoal));color:#fff;padding:24px;border-radius:16px;margin-bottom:24px">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px">
+        <div><div style="font-size:13px;opacity:.7;margin-bottom:4px">سلام</div><h2 class="h2">${esc(u.name)}</h2>
+        <div style="font-size:13px;opacity:.7;margin-top:6px">آخرین ورود: ۱۴۰/۰۶/۲۸</div></div>
+        ${badge("💎 مالک " + (props.length > 1 ? props.length + " واحد" : "یک واحد"), "gold")}</div></div>
+    ${banner}
+    <div class="kpi-grid">
+      <div class="card"><div class="card-title">بدهی فعلی</div><div class="card-value" style="color:${totalDebt > 0 ? "var(--c-error)" : "var(--c-success)"}">${fa(totalDebt)}</div><div class="small muted" style="margin-top:6px">ریال</div></div>
+      <div class="card"><div class="card-title">شارژ ماه جاری</div><div class="card-value">${fa(cur ? cur.amount : 0)}</div><div class="small muted" style="margin-top:6px">${cur ? cur.period : "—"}</div></div>
+      <div class="card"><div class="card-title">اعلان‌های جدید</div><div class="card-value">۳</div><div class="small muted" style="margin-top:6px">۱ اعلان مهم</div></div>
+      <div class="card"><div class="card-title">جلسات پیش‌رو</div><div class="card-value">۱</div><div class="small muted" style="margin-top:6px">مجمع عمومی</div></div>
+    </div>
+    <div class="content-grid" style="margin-top:24px">
+      <div class="card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><h3 class="h3">املاک من</h3>
+        ${btn("مشاهده همه", { variant: "ghost", size: "sm", action: "navigate", extra: 'data-route="portal/properties"' })}</div>
+        ${props.length === 0 ? '<div class="empty">واحدی ثبت نشده</div>' : props.map(p => `<div style="padding:14px;border:1px solid var(--c-slate-100);border-radius:10px;margin-bottom:10px">
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px"><div style="font-weight:600">واحد ${esc(p.unit)} - طبقه ${esc(p.floor)}</div>${badge(p.status, p.status === "تسویه" ? "success" : "warning")}</div>
+          <div class="small muted">${esc(p.type)} • ${p.area} متر • سهم ${p.share}٪</div>
+          ${p.tenant ? `<div class="small" style="margin-top:4px">مستأجر: ${esc(p.tenant)}</div>` : ""}</div>`).join("")}</div>
+      <div class="card"><h3 class="h3" style="margin-bottom:16px">اقدامات سریع</h3>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          ${btn("پرداخت شارژ", { variant: "gold", icon: "money", action: "navigate", extra: 'data-route="portal/invoices"' })}
+          ${btn("مشاهده اسناد", { variant: "outline", icon: "file", action: "navigate", extra: 'data-route="portal/documents"' })}
+          ${btn("ثبت درخواست", { variant: "outline", icon: "support", action: "navigate", extra: 'data-route="portal/requests"' })}
+          ${btn("رأی‌گیری فعال", { variant: "outline", icon: "poll", action: "navigate", extra: 'data-route="portal/voting"' })}</div></div>
+    </div>
+    <div class="card" style="margin-top:20px"><h3 class="h3" style="margin-bottom:16px">آخرین صورتحساب‌ها</h3>
+      <div class="table-wrap" style="border:none"><table class="table">
+        <thead><tr><th>دوره</th><th>نوع</th><th>مبلغ (ریال)</th><th>وضعیت</th><th></th></tr></thead>
+        <tbody>${invoices.slice(0, 5).map(i => `<tr><td>${esc(i.period)}</td><td>${esc(i.type)}</td><td>${fa(i.amount)}</td>
+          <td>${badge(i.status, i.status === "پرداخت شده" ? "success" : "warning")}</td>
+          <td>${i.status !== "پرداخت شده" ? btn("پرداخت", { variant: "gold", size: "sm", action: "pay-invoice", extra: `data-id="${i.id}"` }) : ""}</td></tr>`).join("")}</tbody></table></div></div></div>`;
+    }
+
+    function OwnerProperties() {
+      const u = Store.currentUser;
+      const props = MOCK.properties.filter(p => p.ownerId === u.ownerId);
+      return `<div><div class="page-header"><div><h1 class="page-title">املاک من</h1><div class="page-subtitle">واحد‌های تحت مالکیت شما</div></div></div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px">
+    ${props.map(p => `<div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px">
+        <div><h3 class="h3">واحد ${esc(p.unit)}</h3><div class="muted small">طبقه ${esc(p.floor)}</div></div>
+        ${badge(p.status, p.status === "تسویه" ? "success" : "warning")}</div>
+      <div class="grid" style="grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">
+        <div><div class="small muted">نوع</div><div style="font-weight:600">${esc(p.type)}</div></div>
+        <div><div class="small muted">متراژ</div><div style="font-weight:600">${p.area} متر</div></div>
+        <div><div class="small muted">سهم</div><div style="font-weight:600">${p.share}٪</div></div>
+        <div><div class="small muted">بدهی</div><div style="font-weight:600;color:${p.debt > 0 ? "var(--c-error)" : "var(--c-success)"}">${fa(p.debt)}</div></div></div>
+      ${p.tenant ? `<div style="padding:10px;background:var(--c-slate-100);border-radius:8px;margin-bottom:10px"><div class="small muted">مستأجر</div><div style="font-weight:600">${esc(p.tenant)}</div></div>` : ""}
+      ${btn("پرونده ملک", { variant: "outline", size: "sm", block: true, icon: "folder" })}</div>`).join("")}</div></div>`;
+    }
+
+    function OwnerFinance() {
+      const u = Store.currentUser;
+      const invoices = MOCK.invoices.filter(i => i.ownerId === u.ownerId);
+      const debt = invoices.filter(i => i.status !== "پرداخت شده").reduce((s, i) => s + i.amount, 0);
+      const paid = invoices.filter(i => i.status === "پرداخت شده").reduce((s, i) => s + i.amount, 0);
+      return `<div><div class="page-header"><div><h1 class="page-title">امور مالی</h1><div class="page-subtitle">مدیریت مالی املاک شما</div></div></div>
+  <div class="kpi-grid">
+    <div class="card"><div class="card-title">بدهی کل</div><div class="card-value" style="color:var(--c-error)">${fa(debt)}</div><div class="small muted">ریال</div></div>
+    <div class="card"><div class="card-title">کل پرداختی</div><div class="card-value" style="color:var(--c-success)">${fa(paid)}</div><div class="small muted">ریال</div></div>
+    <div class="card"><div class="card-title">تعداد صورتحساب</div><div class="card-value">${invoices.length}</div><div class="small muted">صورتحساب</div></div>
+    <div class="card"><div class="card-title">وضعیت حساب</div><div class="card-value">${debt > 0 ? "بدهکار" : "تسویه"}</div><div class="small muted">${debt > 0 ? "نیاز به پرداخت" : "وضعیت سالم"}</div></div>
+  </div>
+  ${btn("مشاهده صورتحساب‌ها", { variant: "gold", icon: "money", action: "navigate", extra: 'data-route="portal/invoices"' })}</div>`;
+    }
+
+    function OwnerInvoices() {
+      const u = Store.currentUser;
+      const invoices = MOCK.invoices.filter(i => i.ownerId === u.ownerId);
+      return `<div><div class="page-header"><div><h1 class="page-title">صورتحساب‌ها</h1><div class="page-subtitle">لیست تمامی صورتحساب‌ها</div></div></div>
+  <div class="table-wrap"><table class="table">
+    <thead><tr><th>دوره</th><th>نوع</th><th>مبلغ (ریال)</th><th>سررسید</th><th>وضعیت</th><th>عملیات</th></tr></thead>
+    <tbody>${invoices.map(i => `<tr><td>${esc(i.period)}</td><td>${esc(i.type)}</td><td>${fa(i.amount)}</td><td>${esc(i.due)}</td>
+      <td>${badge(i.status, i.status === "پرداخت شده" ? "success" : "warning")}</td>
+      <td><div style="display:flex;gap:6px">
+        ${btn("مشاهده", { variant: "ghost", size: "sm", action: "navigate", extra: `data-route="portal/invoice/${i.id}"` })}
+        ${i.status !== "پرداخت شده" ? btn("پرداخت", { variant: "gold", size: "sm", action: "pay-invoice", extra: `data-id="${i.id}"` }) : ""}</div></td></tr>`).join("")}</tbody></table></div></div>`;
+    }
+
+    function OwnerInvoiceDetail(id) {
+      const inv = MOCK.invoices.find(i => i.id === id);
+      if (!inv) return `<div class="card">صورتحساب یافت نشد</div>`;
+      return `<div style="max-width:720px">
+    ${btn("بازگشت", { variant: "ghost", size: "sm", icon: "arrow", action: "navigate", extra: 'data-route="portal/invoices"' })}
+    <div class="card" style="margin-top:16px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px">
+        <div>${badge("صورتحساب")}<h2 class="h2" style="margin-top:8px">صورتحساب ${esc(inv.period)}</h2></div>
+        ${badge(inv.status, inv.status === "پرداخت شده" ? "success" : "warning")}</div>
+      <div class="grid" style="grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px">
+        <div><div class="small muted">نوع</div><div style="font-weight:600;font-size:16px">${esc(inv.type)}</div></div>
+        <div><div class="small muted">دوره</div><div style="font-weight:600;font-size:16px">${esc(inv.period)}</div></div>
+        <div><div class="small muted">سررسید</div><div style="font-weight:600;font-size:16px">${esc(inv.due)}</div></div>
+        <div><div class="small muted">شماره فاکتور</div><div style="font-weight:600;font-size:16px">${inv.id.toUpperCase()}</div></div></div>
+      <div style="padding:20px;background:var(--c-gold-100);border-radius:12px;text-align:center;margin-bottom:20px">
+        <div class="muted small">مبلغ قابل پرداخت</div>
+        <div class="h1" style="color:var(--c-gold-600)">${fa(inv.amount)} <span style="font-size:14px">ریال</span></div></div>
+      ${inv.status !== "پرداخت شده"
+          ? btn("پرداخت آنلاین", { variant: "gold", block: true, size: "lg", icon: "money", action: "pay-invoice", extra: `data-id="${inv.id}"` })
+          : btn("دانلود رسید", { variant: "success", block: true, icon: "download" })}</div></div>`;
+    }
+
+    /* 🐛 FIX: حالت Loading پرداخت + رسید */
+    function OwnerPayment(id) {
+      const inv = MOCK.invoices.find(i => i.id === id);
+      if (!inv) return "";
+      const r = Store.paymentResult;
+      if (r && r.loading) {
+        return `<div style="max-width:560px;margin:60px auto"><div class="card" style="text-align:center">
+      <div class="spinner dark" style="width:44px;height:44px;margin:0 auto 20px"></div>
+      <h3 class="h3">در حال اتصال به درگاه پرداخت...</h3>
+      <p class="muted" style="margin-top:8px">لطفاً صبر کنید، در حال پردازش تراکنش هستیم</p></div></div>`;
+      }
+      if (r) {
+        return `<div style="max-width:560px;margin:0 auto"><div class="card" style="text-align:center">
+      <div style="width:80px;height:80px;border-radius:50%;background:${r.ok ? "var(--c-success-50)" : "var(--c-error-50)"};color:${r.ok ? "var(--c-success)" : "var(--c-error)"};display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 20px">${r.ok ? "✓" : "✕"}</div>
+      <h2 class="h2">${r.ok ? "پرداخت موفقیت‌آمیز" : "پرداخت ناموفق"}</h2>
+      <p class="muted" style="margin:10px 0 20px">${r.ok ? "رسید پرداخت به موبایل شما ارسال شد" : esc(r.error)}</p>
+      ${r.ok ? `<div style="padding:16px;background:var(--c-slate-100);border-radius:12px;text-align:right;margin-bottom:20px">
+        <div style="display:flex;justify-content:space-between;margin-bottom:8px"><span class="muted small">شماره پیگیری</span><span style="font-weight:600;direction:ltr">${r.trackingCode}</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:8px"><span class="muted small">تاریخ</span><span style="font-weight:600">۱۴۰۴/۰۶/۲۸</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:8px"><span class="muted small">مبلغ</span><span style="font-weight:600">${fa(inv.amount)} ریال</span></div>
+        <div style="display:flex;justify-content:space-between"><span class="muted small">بابت</span><span style="font-weight:600">${esc(inv.type)}</span></div></div>` : ""}
+      <div style="display:flex;gap:10px;justify-content:center">
+        ${r.ok ? btn("دانلود رسید", { icon: "download" }) : ""}
+        ${btn("بازگشت", { variant: "ghost", action: "navigate", extra: 'data-route="portal/invoices"' })}</div></div></div>`;
+      }
+      return `<div style="max-width:560px;margin:0 auto">
+    ${btn("بازگشت", { variant: "ghost", size: "sm", icon: "arrow", action: "navigate", extra: 'data-route="portal/invoices"' })}
+    <div class="card" style="margin-top:16px"><h2 class="h2" style="margin-bottom:20px">پرداخت آنلاین</h2>
+      <div style="padding:20px;background:var(--c-slate-100);border-radius:12px;margin-bottom:20px">
+        <div style="display:flex;justify-content:space-between;margin-bottom:10px"><span class="muted">بابت</span><span>${esc(inv.type)}</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:10px"><span class="muted">دوره</span><span>${esc(inv.period)}</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:10px"><span class="muted">کارمزد</span><span>۰ ریال</span></div>
+        <div style="border-top:1px dashed var(--c-slate-400);margin-top:10px;padding-top:10px;display:flex;justify-content:space-between">
+          <span style="font-weight:600">مبلغ قابل پرداخت</span>
+          <span style="font-weight:700;color:var(--c-gold-600);font-size:18px">${fa(inv.amount)} ریال</span></div></div>
+      <div class="form-group"><label class="label">انتخاب درگاه پرداخت</label>
+        <select class="select"><option>بانک ملت</option><option>بانک سامان</option><option>زرین‌پال</option></select></div>
+      ${btn("پرداخت آنلاین", { block: true, size: "lg", variant: "gold", icon: "money", action: "pay-start", extra: `data-id="${inv.id}"` })}
+      <div class="demo-hint" style="margin-top:16px">💡 تست سناریوها:
+        <div style="display:flex;gap:6px;margin-top:8px;justify-content:center">
+          <button data-action="pay-scenario" data-s="success" style="padding:6px 12px;border-radius:6px;background:var(--c-success-50);color:var(--c-success);font-weight:600;font-size:11px">سناریوی موفق</button>
+          <button data-action="pay-scenario" data-s="fail" style="padding:6px 12px;border-radius:6px;background:var(--c-error-50);color:var(--c-error);font-weight:600;font-size:11px">سناریوی ناموفق</button>
+          <button data-action="pay-scenario" data-s="cancel" style="padding:6px 12px;border-radius:6px;background:var(--c-warning-50);color:var(--c-warning);font-weight:600;font-size:11px">لغو پرداخت</button></div></div></div></div>`;
+    }
+
+    function OwnerDocuments() {
+      return `<div><div class="page-header"><div><h1 class="page-title">اسناد من</h1><div class="page-subtitle">اسناد رسمی مجتمع</div></div></div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+    ${MOCK.documents.map(d => `<div class="card card-hover">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+        <div style="width:48px;height:48px;border-radius:10px;background:var(--c-gold-100);color:var(--c-gold-600);display:flex;align-items:center;justify-content:center;font-size:22px">${icon("file")}</div>
+        <div><div style="font-weight:600">${esc(d.title)}</div>${badge(d.type)}</div></div>
+      <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--c-slate-500);margin-bottom:12px">
+        <span>نسخه ${d.version}</span><span>${d.pages} صفحه</span><span>${d.date}</span></div>
+      <div style="display:flex;gap:6px">${btn("مشاهده", { variant: "outline", size: "sm", block: true, icon: "eye" })}${btn("", { variant: "ghost", size: "sm", icon: "download" })}</div></div>`).join("")}</div></div>`;
+    }
+
+    function OwnerBylaws() {
+      return `<div><div class="page-header"><div><h1 class="page-title">اساسنامه مجتمع</h1><div class="page-subtitle">قوانین و مقررات</div></div>${btn("دانلود نسخه فعلی", { variant: "gold", icon: "download" })}</div>
+  <div class="card" style="margin-bottom:24px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:12px">
+      <div>${badge("نسخه فعلی", "gold")}<h3 class="h3" style="margin-top:8px">اساسنامه نسخه ${MOCK.bylawVersions[0].v}</h3><div class="muted small">تصویب: ${MOCK.bylawVersions[0].date}</div></div>
+      <div style="display:flex;gap:10px">${btn("جستجو", { variant: "outline", icon: "search" })}${btn("دانلود PDF", { icon: "download" })}</div></div>
+    <div style="padding:20px;background:var(--c-slate-100);border-radius:12px;margin-bottom:16px">
+      <p class="muted" style="font-size:13px">علت آخرین تغییر: <strong>${esc(MOCK.bylawVersions[0].reason)}</strong></p>
+      <p style="font-size:13px;margin-top:8px">${esc(MOCK.bylawVersions[0].summary)}</p></div>
+    <div style="padding:20px;border:1px solid var(--c-slate-200);border-radius:10px;font-size:13px;line-height:2">
+      <p><strong>فصل اول - کلیات و تعاریف</strong></p>
+      <p>ماده ۱: نام مجتمع، «مجتمع تجاری مهستان کرج» است.</p>
+      <p>ماده : مرکز اصلی مجتمع در استان البرز، شهر کرج، بلوار طالقانی شمالی واقع است.</p>
+      <p>ماده ۳: موضوع فعالیت شامل تأسیس، نگهداری و مدیریت واحدهای تجاری و اداری می‌باشد.</p>
+      <div class="muted text-center" style="margin-top:16px;font-size:11px">... ادامه متن در نسخه واقعی ...</div></div></div>
+  <h3 class="h3" style="margin-bottom:16px">تاریخچه تغییرات اساسنامه</h3>
+  <div class="timeline">${MOCK.bylawVersions.map((v, i) => `<div class="timeline-item ${i === 0 ? "current" : ""}">
+    <div class="timeline-card"><div style="display:flex;justify-content:space-between;margin-bottom:8px">
+      <div style="display:flex;align-items:center;gap:8px"><h4>نسخه ${v.v}</h4>${badge(v.status, v.status === "فعلی" ? "gold" : "slate")}</div>
+      <span class="muted small">${v.date}</span></div>
+    <div style="font-weight:600;font-size:13px;margin-bottom:4px">علت تغییر: ${esc(v.reason)}</div>
+    <p class="muted small">${esc(v.summary)}</p>
+    <div style="display:flex;gap:6px;margin-top:10px">${btn("مشاهده", { variant: "ghost", size: "sm", icon: "eye" })}${btn("دانلود مصوبه", { variant: "ghost", size: "sm", icon: "download" })}</div></div></div>`).join("")}</div></div>`;
+    }
+
+    function OwnerMeetings() {
+      return `<div><div class="page-header"><div><h1 class="page-title">جلسات</h1><div class="page-subtitle">جلسات هیئت مدیره و مجمع</div></div></div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px">
+    ${MOCK.meetings.map(m => `<div class="card card-hover">${badge(m.status, m.status === "آینده" ? "gold" : "success")}
+      <h3 class="h3" style="margin:10px 0 8px">${esc(m.title)}</h3>
+      <div style="display:flex;flex-direction:column;gap:4px;font-size:13px;margin-bottom:12px">
+        <div class="muted">${icon("calendar")} ${esc(m.date)} - ${m.time}</div>
+        <div class="muted">${icon("location")} ${esc(m.location)}</div></div>
+      <div style="padding:10px;background:var(--c-slate-100);border-radius:8px;margin-bottom:12px">
+        <div class="small" style="font-weight:600;margin-bottom:4px">دستور جلسه:</div>
+        <ul style="padding-right:20px;font-size:12px">${m.agenda.map(a => `<li>${esc(a)}</li>`).join("")}</ul></div>
+      <div style="display:flex;gap:6px">${btn("جزئیات", { variant: "outline", size: "sm", block: true })}${m.status === "آینده" ? btn("یادآوری", { variant: "gold", size: "sm" }) : ""}</div></div>`).join("")}</div></div>`;
+    }
+
+    function OwnerVoting() {
+      return `<div><div class="page-header"><div><h1 class="page-title">رأی‌گیری</h1><div class="page-subtitle">مشارکت در تصمیم‌گیری‌ها</div></div></div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:20px">
+    ${MOCK.polls.map(p => {
+        const total = p.options.reduce((s, o) => s + o.votes, 0);
+        return `<div class="card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+        ${badge(p.status === "active" ? "فعال" : "پایان یافته", p.status === "active" ? "gold" : "slate")}<span class="small muted">تا ${p.ends}</span></div>
+      <h3 class="h3" style="margin-bottom:6px">${esc(p.title)}</h3><p class="muted small" style="margin-bottom:16px">${esc(p.desc)}</p>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:12px">
+        ${p.options.map(o => {
+          const pct = total > 0 ? (o.votes / total * 100).toFixed(1) : 0;
+          return `<div data-action="vote" data-poll="${p.id}" data-opt="${o.id}" style="padding:12px;border-radius:10px;border:1px solid ${o.voted ? "var(--c-gold)" : "var(--c-slate-200)"};cursor:${p.status === "active" ? "pointer" : "default"};background:${o.voted ? "var(--c-gold-100)" : "#fff"}">
+            <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:13px"><span style="font-weight:600">${esc(o.label)} ${o.voted ? "✓" : ""}</span><span class="muted">${pct}٪</span></div>
+            <div style="height:6px;background:var(--c-slate-100);border-radius:3px;overflow:hidden"><div style="width:${pct}%;height:100%;background:var(--c-gold)"></div></div>
+            <div class="small muted" style="margin-top:6px">${fa(o.votes)} رأی</div></div>`;
+        }).join("")}</div>
+      <div class="small muted">کل شرکت‌کنندگان: ${fa(total)}</div></div>`;
+      }).join("")}</div></div>`;
+    }
+
+    function OwnerNotifications() {
+      const u = Store.currentUser;
+      const cats = ["all", "مالی", "جلسه", "مصوبه", "تعمیرات", "اطلاعیه", "پیام", "اضطراری"];
+      const list = MOCK.notifications.filter(n => n.roles.includes(u.role) || n.roles.includes("all"));
+      const filtered = Store.notifFilter === "all" ? list : list.filter(n => n.category === Store.notifFilter);
+      return `<div><div class="page-header"><div><h1 class="page-title">اعلان‌ها</h1><div class="page-subtitle">مرکز اطلاع‌رسانی</div></div>${btn("خواندن همه", { variant: "outline", size: "sm" })}</div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px">${cats.map(c => `<div class="chip ${Store.notifFilter === c ? "active" : ""}" data-action="notif-filter" data-cat="${c}">${c === "all" ? "همه" : c}</div>`).join("")}</div>
+  <div style="display:flex;flex-direction:column;gap:10px">
+    ${filtered.map(n => `<div class="card card-hover"><div style="display:flex;justify-content:space-between;margin-bottom:8px">
+      ${badge(n.category, n.priority === "high" ? "error" : n.priority === "medium" ? "warning" : "slate")}<span class="small muted">${esc(n.date)}</span></div>
+      <h4 style="margin-bottom:4px">${esc(n.title)}</h4><p class="muted small">${esc(n.body)}</p></div>`).join("")}</div></div>`;
+    }
+
+    function OwnerMessages() {
+      const msgs = [
+        { from: "مدیریت مجتمع", subject: "اطلاعیه جلسه مجمع", time: "۱۴:۲۰", unread: true },
+        { from: "واحد مالی", subject: "یادآوری پرداخت شارژ", time: "۱۰:۱۵", unread: true },
+        { from: "پشتیبانی فنی", subject: "پاسخ درخواست شما", time: "دیروز", unread: false },
+      ];
+      return `<div><div class="page-header"><div><h1 class="page-title">پیام‌ها</h1><div class="page-subtitle">ارتباط با مدیریت</div></div>${btn("پیام جدید", { variant: "gold", icon: "plus" })}</div>
+  <div class="grid" style="grid-template-columns:1fr 2fr;gap:20px">
+    <div class="card"><input class="input" placeholder="🔍 جستجو..." style="margin-bottom:12px" />
+      ${msgs.map(m => `<div style="padding:12px;border-radius:8px;margin-bottom:6px;cursor:pointer;background:${m.unread ? "var(--c-gold-100)" : "#fff"}">
+        <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-weight:600;font-size:13px">${esc(m.from)}</span><span class="small muted">${m.time}</span></div>
+        <div style="font-size:13px;color:var(--c-slate-700)">${esc(m.subject)}</div></div>`).join("")}</div>
+    <div class="card"><div style="margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--c-slate-100)">
+      <h3 class="h3">اطلاعیه جلسه مجمع</h3><div class="muted small">از: مدیریت مجتمع • ۱۴:۲۰</div></div>
+      <p style="line-height:2">مالک گرامی،<br/><br/>احتراماً به اطلاع می‌رساند جلسه مجمع عمومی سالانه در تاریخ ۱۴۰/۰۷/۱۰ ساعت ۱۸ برگزار می‌گردد.<br/><br/>با تشکر<br/>مدیریت مجتمع مهستان</p>
+      <div style="margin-top:20px;padding:12px;background:var(--c-slate-100);border-radius:8px">
+        <textarea class="textarea" rows="3" placeholder="پاسخ خود را بنویسید..."></textarea>
+        <div style="margin-top:8px;display:flex;gap:8px;justify-content:flex-end">${btn("پیوست", { variant: "ghost", size: "sm", icon: "file" })}${btn("ارسال پاسخ", { variant: "gold", size: "sm" })}</div></div></div></div></div>`;
+    }
+
+    /* 🐛 FIX: تیکت‌ها — مالک فقط مال خود، مدیر همه + مودال جزئیات با Timeline */
+    function OwnerRequests() {
+      const u = Store.currentUser;
+      const tickets = u.role === "owner" ? MOCK.tickets.filter(t => t.ownerId === u.ownerId) : MOCK.tickets;
+      const sc = { "ثبت شد": "info", "در حال بررسی": "warning", "ارجاع شد": "warning", "در حال انجام": "warning", "تکمیل شده": "success", "بسته شد": "slate" };
+      return `<div><div class="page-header"><div><h1 class="page-title">درخواست‌ها</h1><div class="page-subtitle">ثبت و پیگیری درخواست‌ها</div></div>${btn("درخواست جدید", { variant: "gold", icon: "plus", action: "open-ticket-modal" })}</div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+    ${tickets.map(t => `<div class="card card-hover"><div style="display:flex;justify-content:space-between;margin-bottom:10px">
+      ${badge(t.status, sc[t.status] || "slate")}<span class="small muted">${t.id}</span></div>
+      <h3 class="h4" style="margin-bottom:6px">${esc(t.subject)}</h3>
+      <div style="display:flex;gap:10px;font-size:12px;color:var(--c-slate-500);margin-bottom:10px">
+        <span>${icon("folder")} ${esc(t.category)}</span><span>اولویت: ${esc(t.priority)}</span></div>
+      <div class="muted small">ثبت: ${esc(t.date)}</div>
+      ${btn("مشاهده جزئیات", { variant: "outline", size: "sm", block: true, style: "margin-top:12px", action: "open-ticket-detail", extra: `data-id="${t.id}"` })}</div>`).join("")}</div>
+  ${Store.showModal ? TicketModal() : ""}
+  ${Store.ticketModalId ? TicketDetailModal() : ""}</div>`;
+    }
+
+    function TicketModal() {
+      return `<div class="modal-backdrop" data-action="close-ticket-modal"><div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-header"><h3 class="modal-title">ثبت درخواست جدید</h3><button class="icon-btn" data-action="close-ticket-modal">${icon("close")}</button></div>
+    <div class="modal-body">
+      <div class="form-group"><label class="label">نوع درخواست</label><select class="select"><option>فنی</option><option>اداری</option><option>مالی</option><option>آسانسور</option><option>تأسیسات</option><option>پارکینگ</option><option>امنیت</option><option>خدمات</option></select></div>
+      <div class="form-group"><label class="label">اولویت</label><select class="select"><option>پایین</option><option>متوسط</option><option>بالا</option><option>اضطراری</option></select></div>
+      <div class="form-group"><label class="label">موضوع</label><input class="input" placeholder="عنوان درخواست" /></div>
+      <div class="form-group"><label class="label">شرح درخواست</label><textarea class="textarea" rows="4" placeholder="توضیح کامل..."></textarea></div>
+      <div class="form-group"><label class="label">پیوست فایل</label>${btn("افزودن فایل", { variant: "ghost", icon: "upload", block: true })}</div></div>
+    <div class="modal-footer">${btn("انصراف", { variant: "ghost", action: "close-ticket-modal" })}${btn("ثبت درخواست", { variant: "gold", action: "submit-ticket" })}</div></div></div>`;
+    }
+
+    function TicketDetailModal() {
+      const t = MOCK.tickets.find(x => x.id === Store.ticketModalId);
+      if (!t) return "";
+      return `<div class="modal-backdrop" data-action="close-ticket-detail"><div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-header"><h3 class="modal-title">${esc(t.subject)}</h3><button class="icon-btn" data-action="close-ticket-detail">${icon("close")}</button></div>
+    <div class="modal-body">
+      <div style="display:flex;gap:8px;margin-bottom:16px">${badge(t.status, "warning")}${badge(t.category, "slate")}${badge("اولویت: " + t.priority, "info")}</div>
+      <h4 style="margin-bottom:12px">تاریخچه پیگیری</h4>
+      <div class="timeline">${(t.timeline || []).map((s, i) => `<div class="timeline-item ${i === t.timeline.length - 1 ? "current" : ""}">
+        <div class="timeline-card"><div class="muted small">${esc(s.time)} • ${esc(s.actor)}</div><div style="font-size:13px;margin-top:4px">${esc(s.text)}</div></div></div>`).join("")}</div></div>
+    <div class="modal-footer">${btn("بستن", { variant: "ghost", action: "close-ticket-detail" })}</div></div></div>`;
+    }
+
+    function OwnerSurveys() {
+      const surveys = [
+        { t: "رضایت از خدمات نظافت", q: "میزان رضایت شما از نظافت", opts: ["عالی", "خوب", "متوسط", "ضعیف"], status: "closed" },
+        { t: "پیشنهاد برای بهبود", q: "پیشنهادی برای بهبود خدمات دارید؟", opts: ["بله", "خیر"], status: "active" },
+        { t: "رضایت از امنیت", q: "آیا از خدمات امنیت رضایت دارید؟", opts: ["کاملاً", "نسبتاً", "کم"], status: "active" },
+      ];
+      return `<div><div class="page-header"><div><h1 class="page-title">نظرسنجی‌ها</h1><div class="page-subtitle">نظر شما ارزشمند است</div></div></div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+    ${surveys.map((s, i) => `<div class="card">${badge(s.status === "active" ? "فعال" : "پایان یافته", s.status === "active" ? "gold" : "slate")}
+      <h3 class="h3" style="margin:10px 0 8px">${esc(s.t)}</h3><p class="muted small" style="margin-bottom:14px">${esc(s.q)}</p>
+      <div style="display:flex;flex-direction:column;gap:6px">${s.opts.map(o => `<label style="display:flex;align-items:center;gap:8px;padding:10px;border:1px solid var(--c-slate-200);border-radius:8px;cursor:pointer"><input type="radio" name="s${i}" />${o}</label>`).join("")}</div>
+      ${s.status === "active" ? btn("ثبت رأی", { variant: "gold", block: true, size: "sm", style: "margin-top:12px" }) : ""}</div>`).join("")}</div></div>`;
+    }
+
+    function OwnerCalendar() {
+      return `<div><div class="page-header"><div><h1 class="page-title">تقویم</h1><div class="page-subtitle">رویدادها، جلسات و مهلت‌ها</div></div></div>
+  <div class="card"><div class="muted text-center">تقویم کامل (Demo UI)</div>
+    <div class="grid" style="grid-template-columns:repeat(7,1fr);gap:6px;margin-top:16px">
+      ${["ش", "ی", "د", "س", "چ", "پ", "ج"].map(d => `<div class="text-center muted small" style="padding:8px;font-weight:600">${d}</div>`).join("")}
+      ${Array.from({ length: 30 }).map((_, i) => `<div style="aspect-ratio:1;border:1px solid var(--c-slate-200);border-radius:8px;padding:6px;position:relative;cursor:pointer">
+        <div style="font-size:13px;font-weight:600">${i + 1}</div>
+        ${i === 10 ? '<div style="position:absolute;bottom:4px;right:4px;width:8px;height:8px;border-radius:50%;background:var(--c-gold)"></div>' : ""}
+        ${i === 25 ? '<div style="position:absolute;bottom:4px;right:4px;width:8px;height:8px;border-radius:50%;background:var(--c-error)"></div>' : ""}</div>`).join("")}</div>
+    <div style="margin-top:20px;display:flex;gap:16px;font-size:12px"><span>🟡 جلسه مجمع</span><span>🔴 مهلت پرداخت</span><span>🟢 رویداد</span></div></div></div>`;
+    }
+
+    function OwnerProfile() {
+      const u = Store.currentUser;
+      return `<div><div class="page-header"><div><h1 class="page-title">پروفایل من</h1><div class="page-subtitle">اطلاعات شخصی</div></div>${btn("ویرایش", { variant: "gold" })}</div>
+  <div class="grid" style="grid-template-columns:1fr 2fr;gap:20px">
+    <div class="card"><div style="text-align:center">
+      <div style="width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--c-navy-800),var(--c-charcoal));color:var(--c-gold-400);display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:700;margin:0 auto 14px">${u.avatar}</div>
+      <h3 class="h3">${esc(u.name)}</h3><div class="muted small">${roleLabel(u.role)}</div>${badge("حساب فعال", "gold")}</div>
+      <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--c-slate-100);font-size:13px">
+        <div style="display:flex;justify-content:space-between;margin-bottom:8px"><span class="muted">موبایل</span><span style="direction:ltr">${esc(u.mobile)}</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:8px"><span class="muted">ایمیل</span><span>—</span></div>
+        <div style="display:flex;justify-content:space-between"><span class="muted">عضویت از</span><span>۱۳۹۵/۰۶/۰۱</span></div></div></div>
+    <div class="card"><h3 class="h3" style="margin-bottom:16px">اطلاعات شخصی</h3>
+      <div class="grid" style="grid-template-columns:1fr 1fr;gap:14px">
+        <div class="form-group"><label class="label">نام</label><input class="input" value="${esc(u.name.split(" ")[0])}" /></div>
+        <div class="form-group"><label class="label">نام خانوادگی</label><input class="input" value="${esc(u.name.split(" ")[1] || "")}" /></div>
+        <div class="form-group"><label class="label">کد ملی</label><input class="input" value="۰۰۲۳۴۵۶۷۸" /></div>
+        <div class="form-group"><label class="label">ایمیل</label><input class="input" placeholder="email@example.com" /></div>
+        <div class="form-group" style="grid-column:span 2"><label class="label">آدرس</label><input class="input" placeholder="آدرس پستی" /></div></div>
+      <h3 class="h3" style="margin:20px 0 14px">امنیت حساب</h3>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="padding:12px;border:1px solid var(--c-slate-200);border-radius:8px;display:flex;justify-content:space-between;align-items:center">
+          <div><div style="font-weight:600">تغییر رمز عبور</div><div class="muted small">آخرین تغییر: ۶ ماه پیش</div></div>${btn("تغییر", { variant: "ghost", size: "sm" })}</div>
+        <div style="padding:12px;border:1px solid var(--c-slate-200);border-radius:8px;display:flex;justify-content:space-between;align-items:center">
+          <div><div style="font-weight:600">دستگاه‌های فعال</div><div class="muted small">۲ دستگاه فعال</div></div>${btn("مدیریت", { variant: "ghost", size: "sm" })}</div></div></div></div></div>`;
+    }
+
+    /* ---------- 10. ADMIN / EXECUTIVE ---------- */
+    function AdminDashboard() {
+      return `<div><div class="page-header"><div><h1 class="page-title">داشبورد مدیریتی</h1><div class="page-subtitle">نمای کلی از وضعیت مجتمع</div></div>
+    <div style="display:flex;gap:8px">${btn("گزارش PDF", { variant: "ghost", size: "sm" })}${btn("اقدام جدید", { variant: "gold", size: "sm", icon: "plus" })}</div></div>
+  <div class="kpi-grid">
+    <div class="card"><div class="card-title">کل مالکین</div><div class="card-value">۲۴</div><div class="small muted" style="margin-top:6px">↑ ۲٪ نسبت به ماه قبل</div></div>
+    <div class="card"><div class="card-title">کل واحدها</div><div class="card-value">۴۱۲</div><div class="small muted" style="margin-top:6px">۳۸۷ واحد فعال</div></div>
+    <div class="card"><div class="card-title">بدهی کل</div><div class="card-value" style="color:var(--c-error);font-size:22px">۱,۸۴۷M</div><div class="small muted" style="margin-top:6px">ریال</div></div>
+    <div class="card"><div class="card-title">وصول ماه جاری</div><div class="card-value" style="color:var(--c-success)">۸۷٪</div><div class="small muted" style="margin-top:6px">۸۹۲M ریال</div></div>
+    <div class="card"><div class="card-title">درخواست‌های باز</div><div class="card-value" style="color:var(--c-warning)">۱۴</div><div class="small muted" style="margin-top:6px">۴ اولویت بالا</div></div>
+    <div class="card"><div class="card-title">جلسات پیش‌رو</div><div class="card-value">۳</div><div class="small muted" style="margin-top:6px">مجمع سالانه</div></div></div>
+  <div class="content-grid" style="margin-top:24px">
+    <div class="card"><h3 class="h3" style="margin-bottom:16px">روند وصول ماهانه</h3><div class="chart-box"><canvas id="financeChart"></canvas></div></div>
+    <div class="card"><h3 class="h3" style="margin-bottom:16px">توزیع وضعیت تیکت‌ها</h3><div class="chart-box"><canvas id="ticketChart"></canvas></div></div></div>
+  <div class="content-grid" style="margin-top:20px">
+    <div class="card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><h3 class="h3">آخرین تیکت‌ها</h3>${btn("همه", { variant: "ghost", size: "sm" })}</div>
+      <div style="display:flex;flex-direction:column;gap:10px">${MOCK.tickets.map(t => `<div style="padding:12px;background:var(--c-slate-100);border-radius:10px;display:flex;justify-content:space-between;align-items:center">
+        <div><div style="font-weight:600;font-size:13px">${esc(t.subject)}</div><div class="muted small">${esc(t.date)} • ${esc(t.category)}</div></div>
+        ${badge(t.status, t.status === "تکمیل شده" ? "success" : "warning")}</div>`).join("")}</div></div>
+    <div class="card"><h3 class="h3" style="margin-bottom:16px">اعلان‌های مدیریتی</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        ${[{ t: "جلسه مجمع عمومی", d: "۵ روز دیگر", c: "gold" }, { t: "مهلت پرداخت شارژ", d: "۲ روز", c: "error" }, { t: "پایان پروژه تعمیرات پارکینگ", d: "دیروز", c: "success" }].map(a => `<div style="padding:12px;border-right:3px solid var(--c-${a.c});background:var(--c-slate-100);border-radius:8px">
+          <div style="font-weight:600;font-size:13px">${esc(a.t)}</div><div class="muted small">${a.d}</div></div>`).join("")}</div></div></div></div>`;
+    }
+
+    /* 💰 ماژول جدید: مدل مالی کامل درآمد/هزینه */
+    function FinancialModel() {
+      const F = MOCK.fin;
+      const totRev = F.revenueBreakdown.reduce((s, x) => s + x.value, 0);
+      const totExp = F.expenseBreakdown.reduce((s, x) => s + x.value, 0);
+      return `<div>
+  <div class="page-header"><div><h1 class="page-title">مدل مالی مجتمع</h1><div class="page-subtitle">جریان درآمدها، هزینه‌ها و تراز ماهانه</div></div>${btn("خروجی گزارش", { variant: "ghost", icon: "download" })}</div>
+  <div class="kpi-grid">
+    <div class="card"><div class="card-title">درآمد این ماه</div><div class="card-value" style="color:var(--c-success)">${fa(totRev)}</div><div class="small muted" style="margin-top:6px">میلیون ریال</div></div>
+    <div class="card"><div class="card-title">هزینه این ماه</div><div class="card-value" style="color:var(--c-error)">${fa(totExp)}</div><div class="small muted" style="margin-top:6px">میلیون ریال</div></div>
+    <div class="card"><div class="card-title">تراز خالص</div><div class="card-value" style="color:var(--c-success)">+${fa(totRev - totExp)}</div><div class="small muted" style="margin-top:6px">میلیون ریال</div></div>
+    <div class="card"><div class="card-title">نرخ وصول شارژ</div><div class="card-value">۸۷٪</div><div class="small muted" style="margin-top:6px">↑ ۵٪ نسبت به ماه قبل</div></div></div>
+
+  <div class="content-grid" style="margin-top:8px">
+    <div class="card"><h3 class="h3" style="margin-bottom:16px">روند درآمد و هزینه (۶ ماه اخیر - میلیون ریال)</h3><div class="chart-box"><canvas id="revExpChart"></canvas></div></div>
+    <div class="card"><h3 class="h3" style="margin-bottom:16px">ترکیب درآمدها</h3><div class="chart-box"><canvas id="revBreakChart"></canvas></div></div></div>
+
+  <div class="content-grid" style="margin-top:20px">
+    <div class="card"><h3 class="h3" style="margin-bottom:16px">ترکیب هزینه‌ها</h3><div class="chart-box"><canvas id="expBreakChart"></canvas></div></div>
+    <div class="card"><h3 class="h3" style="margin-bottom:16px">هزینه‌های عمده پیش‌رو (نوسازی مشاعات)</h3>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        ${F.upcomingCosts.map(c => `<div style="padding:12px;background:var(--c-slate-100);border-radius:10px">
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-weight:600;font-size:13px">${esc(c.t)}</span>${badge(c.s, c.s === "در حال اجرا" ? "warning" : "slate")}</div>
+          <div class="small muted">برآورد: ${esc(c.c)}</div></div>`).join("")}</div>
+      <div class="muted small" style="margin-top:12px">شامل: سنگ‌فرش کف لابی، نورپردازی ورودی، بازسازی راهروها، بهسازی آسانسورها</div></div></div>
+
+  <div class="card" style="margin-top:20px">
+    <h3 class="h3" style="margin-bottom:6px">غرفه‌های مشاع (لابی و ورودی‌ها)</h3>
+    <p class="muted small" style="margin-bottom:16px">درآمد اجاره مشاعات به مشاغل: عطر، پاستیل و لواشک، دمنوش، آرایشی و...</p>
+    <div class="table-wrap" style="border:none"><table class="table">
+      <thead><tr><th>غرفه</th><th>موقعیت</th><th>شغل</th><th>اجاره ماهانه (M ریال)</th><th>قرارداد</th><th>وضعیت این ماه</th></tr></thead>
+      <tbody>${F.kiosks.map(k => `<tr><td><strong>${esc(k.name)}</strong></td><td>${esc(k.loc)}</td><td>${esc(k.biz)}</td><td>${fa(k.rent)}</td>
+        <td>${badge(k.contract, "success")}</td><td>${badge(k.pay, k.pay === "پرداخت شده" ? "success" : "warning")}</td></tr>`).join("")}</tbody></table></div>
+    <div class="muted small" style="margin-top:12px">نمونه Demo • داده‌ها با ارقام واقعی حسابداری جایگزین می‌شوند</div></div></div>`;
+    }
+
+    function ExecutiveDashboard() {
+      return `<div>
+  <div style="background:linear-gradient(135deg,var(--c-navy-900),var(--c-navy-700));color:#fff;padding:28px;border-radius:16px;margin-bottom:24px">
+    <div style="font-size:12px;color:var(--c-gold-400);margin-bottom:6px;letter-spacing:.1em">BOARD COMMAND CENTER</div>
+    <h1 class="h1">مرکز فرماندهی مجتمع مهستان</h1>
+    <p style="color:rgba(255,255,255,.7);margin-top:6px">خلاصه اجرایی وضعیت مالی، عملیاتی و تصمیمات استراتژیک</p></div>
+  <div class="kpi-grid">
+    <div class="card" style="border-right:4px solid var(--c-gold)"><div class="card-title">وصول ماه جاری</div><div class="card-value" style="color:var(--c-success)">۸۷٪</div><div class="small muted" style="margin-top:6px">↑ ۵٪</div></div>
+    <div class="card" style="border-right:4px solid var(--c-error)"><div class="card-title">بدهی معوق</div><div class="card-value" style="font-size:20px;color:var(--c-error)">۱,۸۴۷M</div><div class="small muted" style="margin-top:6px">۲۴ مالک بدهکار</div></div>
+    <div class="card" style="border-right:4px solid var(--c-success)"><div class="card-title">تراز خالص ماه</div><div class="card-value" style="color:var(--c-success)">+۳۹۲M</div><div class="small muted" style="margin-top:6px">درآمد منهای هزینه</div></div>
+    <div class="card" style="border-right:4px solid var(--c-warning)"><div class="card-title">درخواست‌های باز</div><div class="card-value">۱۴</div><div class="small muted" style="margin-top:6px">۴ مورد فوری</div></div>
+    <div class="card" style="border-right:4px solid var(--c-gold)"><div class="card-title">رضایت مالکین</div><div class="card-value" style="color:var(--c-gold-600)">۴.۲</div><div class="small muted" style="margin-top:6px">از ۵ ⭐</div></div>
+    <div class="card" style="border-right:4px solid var(--c-info)"><div class="card-title">پروژه‌های فعال</div><div class="card-value">۳</div><div class="small muted" style="margin-top:6px">در حال اجرا</div></div></div>
+
+  <div class="content-grid" style="margin-top:24px">
+    <div class="card"><h3 class="h3" style="margin-bottom:16px">روند درآمد و هزینه (میلیون ریال)</h3><div class="chart-box"><canvas id="revExpChart"></canvas></div></div>
+    <div class="card"><h3 class="h3" style="margin-bottom:16px">ترکیب درآمدها</h3><div class="chart-box"><canvas id="revBreakChart"></canvas></div></div></div>
+
+  <div class="content-grid" style="margin-top:20px">
+    <div class="card"><h3 class="h3" style="margin-bottom:16px">روند وصول ۶ ماه اخیر</h3><div class="chart-box"><canvas id="financeChart"></canvas></div></div>
+    <div class="card"><h3 class="h3" style="margin-bottom:16px">آخرین مصوبات</h3>
+      <div style="display:flex;flex-direction:column;gap:10px">${MOCK.resolutions.slice(0, 3).map(r => `<div style="padding:12px;background:var(--c-slate-100);border-radius:10px">
+        <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-weight:600;font-size:13px">${esc(r.number)}</span>${badge(r.status, r.status === "اجرا شده" ? "success" : "warning")}</div>
+        <div style="font-size:13px;margin-bottom:6px">${esc(r.subject)}</div>
+        <div style="height:4px;background:var(--c-slate-200);border-radius:2px;overflow:hidden"><div style="width:${r.progress}%;height:100%;background:var(--c-gold)"></div></div>
+        <div class="small muted" style="margin-top:4px">پیشرفت: ${r.progress}٪</div></div>`).join("")}</div></div></div>
+
+  <div class="content-grid" style="margin-top:20px">
+    <div class="card"><h3 class="h3" style="margin-bottom:16px">🚨 هشدارهای مدیریتی</h3>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        ${[{ t: "واحد A-312 بیش از ۶ ماه بدهی معوق دارد", l: "اقدام فوری", c: "error" }, { t: "پروژه نوسازی لابی ۱۵٪ عقب‌تر از زمان‌بندی", l: "بررسی", c: "warning" }, { t: "قرارداد شرکت خدماتی رو به اتمام است", l: "تمدید", c: "info" }].map(a => `<div style="padding:12px;border-right:3px solid var(--c-${a.c});background:var(--c-slate-100);border-radius:8px">
+          <div style="font-weight:600;font-size:13px">${esc(a.t)}</div><div class="small" style="color:var(--c-${a.c});margin-top:4px">${a.l}</div></div>`).join("")}</div></div>
+    <div class="card"><h3 class="h3" style="margin-bottom:16px">✅ تصمیمات در انتظار</h3>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        ${["تصویب بودجه سنگ‌فرش کف لابی", "انتخاب پیمانکار جدید خدماتی", "تصویب تغییر ساعت کاری نوروز"].map((t, i) => `<div style="padding:12px;background:var(--c-slate-100);border-radius:8px;display:flex;align-items:center;gap:10px">
+          <div style="width:24px;height:24px;border-radius:50%;background:var(--c-gold-100);color:var(--c-gold-600);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700">${i + 1}</div>
+          <div style="flex:1;font-size:13px">${esc(t)}</div>${btn("بررسی", { variant: "ghost", size: "sm" })}</div>`).join("")}</div></div></div></div>`;
+    }
+
+    function AdminResolutions() {
+      return `<div><div class="page-header"><div><h1 class="page-title">مصوبات</h1><div class="page-subtitle">پیگیری اجرای مصوبات</div></div>${btn("مصوبه جدید", { variant: "gold", icon: "plus" })}</div>
+  <div class="table-wrap"><table class="table"><thead><tr><th>شماره</th><th>موضوع</th><th>تاریخ</th><th>مسئول</th><th>مهلت</th><th>پیشرفت</th><th>وضعیت</th></tr></thead>
+  <tbody>${MOCK.resolutions.map(r => `<tr><td><strong>${esc(r.number)}</strong></td><td>${esc(r.subject)}</td><td>${esc(r.date)}</td><td>${esc(r.responsible)}</td><td>${esc(r.deadline)}</td>
+    <td><div style="display:flex;align-items:center;gap:8px"><div style="flex:1;height:4px;background:var(--c-slate-200);border-radius:2px;min-width:60px"><div style="width:${r.progress}%;height:100%;background:var(--c-gold)"></div></div><span class="small">${r.progress}٪</span></div></td>
+    <td>${badge(r.status, r.status === "اجرا شده" ? "success" : "warning")}</td></tr>`).join("")}</tbody></table></div></div>`;
+    }
+
+    function AdminProjects() {
+      return `<div><div class="page-header"><div><h1 class="page-title">پروژه‌های مجتمع</h1><div class="page-subtitle">پروژه‌های در حال اجرا</div></div></div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px">
+    ${MOCK.projects.map(p => `<div class="card">${badge(p.status, p.status === "تکمیل شده" ? "success" : "gold")}
+      <h3 class="h3" style="margin:10px 0 8px">${esc(p.name)}</h3>
+      <div style="margin:14px 0"><div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px"><span class="muted">پیشرفت</span><span style="font-weight:600">${p.progress}٪</span></div>
+      <div style="height:8px;background:var(--c-slate-100);border-radius:4px;overflow:hidden"><div style="width:${p.progress}%;height:100%;background:linear-gradient(90deg,var(--c-gold),var(--c-gold-600))"></div></div></div>
+      <div class="grid" style="grid-template-columns:1fr 1fr;gap:8px;font-size:12px">
+        <div><div class="muted">بودجه</div><div style="font-weight:600">${esc(p.budget)}</div></div>
+        <div><div class="muted">خرج شده</div><div style="font-weight:600">${esc(p.spent)}</div></div>
+        <div><div class="muted">پیمانکار</div><div style="font-weight:600">${esc(p.contractor)}</div></div>
+        <div><div class="muted">مهلت</div><div style="font-weight:600">${esc(p.deadline)}</div></div></div></div>`).join("")}</div></div>`;
+    }
+
+    function AdminOwners() {
+      return `<div><div class="page-header"><div><h1 class="page-title">مدیریت مالکین</h1><div class="page-subtitle">۲۴۸ مالک فعال</div></div>${btn("مالک جدید", { variant: "gold", icon: "plus" })}</div>
+  <div class="table-wrap"><div class="table-toolbar"><input class="input" style="max-width:260px" placeholder="🔍 جستجو..." /><select class="select" style="max-width:160px"><option>همه</option><option>فعال</option><option>غیرفعال</option></select></div>
+  <table class="table"><thead><tr><th>نام</th><th>موبایل</th><th>واحدها</th><th>وضعیت</th><th>آخرین فعالیت</th><th></th></tr></thead>
+  <tbody>${MOCK.users.filter(u => u.role === "owner").map(u => `<tr>
+    <td><div style="display:flex;align-items:center;gap:10px"><div style="width:32px;height:32px;border-radius:50%;background:var(--c-slate-200);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700">${u.avatar}</div><div style="font-weight:600">${esc(u.name)}</div></div></td>
+    <td style="direction:ltr;text-align:right">${esc(u.mobile)}</td><td>${esc(u.unitLabel)}</td><td>${badge("فعال", "success")}</td><td class="muted small">۱۴۰۴/۰۶/۲۸</td>
+    <td><div style="display:flex;gap:6px">${btn("مشاهده", { variant: "ghost", size: "sm" })}${btn("", { variant: "ghost", size: "sm", icon: "edit" })}</div></td></tr>`).join("")}</tbody></table></div></div>`;
+    }
+
+    function AdminProperties() {
+      return `<div><div class="page-header"><div><h1 class="page-title">واحدها</h1><div class="page-subtitle">مدیریت ۴۱۲ واحد</div></div>${btn("واحد جدید", { variant: "gold", icon: "plus" })}</div>
+  <div class="table-wrap"><table class="table"><thead><tr><th>شماره</th><th>طبقه</th><th>نوع</th><th>متراژ</th><th>مالک</th><th>مستأجر</th><th>وضعیت مالی</th><th></th></tr></thead>
+  <tbody>${MOCK.properties.map(p => {
+        const o = MOCK.users.find(u => u.ownerId === p.ownerId);
+        return `<tr><td><strong>${esc(p.unit)}</strong></td><td>${esc(p.floor)}</td><td>${esc(p.type)}</td><td>${p.area} م</td>
+    <td>${o ? esc(o.name) : "—"}</td><td>${p.tenant ? esc(p.tenant) : "—"}</td><td>${badge(p.status, p.status === "تسویه" ? "success" : "warning")}</td>
+    <td>${btn("پرونده", { variant: "ghost", size: "sm" })}</td></tr>`;
+      }).join("")}</tbody></table></div></div>`;
+    }
+
+    function AdminAudit() {
+      return `<div><div class="page-header"><div><h1 class="page-title">Audit Log</h1><div class="page-subtitle">لاگ تمام عملیات حساس</div></div>${btn("خروجی Excel", { variant: "ghost", icon: "download" })}</div>
+  <div class="table-wrap"><table class="table"><thead><tr><th>کاربر</th><th>اقدام</th><th>هدف</th><th>زمان</th></tr></thead>
+  <tbody>${MOCK.auditLog.map(a => `<tr><td style="font-weight:600">${esc(a.user)}</td><td>${esc(a.action)}</td><td>${esc(a.target)}</td><td class="muted small">${esc(a.time)}</td></tr>`).join("")}</tbody></table></div></div>`;
+    }
+
+    function AdminCms() {
+      const items = [{ t: "صفحات", i: "file", n: 12 }, { t: "اخبار", i: "news", n: 24 }, { t: "رویدادها", i: "event", n: 8 }, { t: "فروشگاه‌ها", i: "store", n: 156 }, { t: "پیشنهادهای تخفیف", i: "offer", n: 18 }, { t: "بنرها", i: "globe", n: 6 }, { t: "منوها", i: "menu", n: 4 }, { t: "سوالات متداول", i: "folder", n: 28 }];
+      return `<div><div class="page-header"><div><h1 class="page-title">مدیریت محتوا</h1><div class="page-subtitle">مدیریت وب‌سایت عمومی</div></div></div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">
+    ${items.map(m => `<div class="card card-hover"><div style="display:flex;align-items:center;gap:12px">
+      <div style="width:48px;height:48px;border-radius:12px;background:var(--c-gold-100);color:var(--c-gold-600);display:flex;align-items:center;justify-content:center;font-size:22px">${icon(m.i)}</div>
+      <div><div style="font-weight:600">${esc(m.t)}</div><div class="muted small">${m.n} آیتم</div></div></div></div>`).join("")}</div></div>`;
+    }
+
+    function AdminMedia() {
+      return `<div><div class="page-header"><div><h1 class="page-title">کتابخانه رسانه</h1></div>${btn("آپلود فایل", { variant: "gold", icon: "upload" })}</div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px">
+    ${[1, 2, 3, 4].map(n => `<figure class="photo" style="height:140px"><img src="images/mahestan-${n}.jpg" alt="تصویر مهستان" loading="lazy" onerror="imgFallback(this)"></figure>`).join("")}
+    ${Array.from({ length: 8 }).map(() => `<div style="aspect-ratio:1;background:linear-gradient(135deg,var(--c-slate-100),var(--c-slate-200));border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--c-slate-500);font-size:32px">🖼️</div>`).join("")}</div>
+  <div class="muted text-center" style="margin-top:16px;font-size:11px">تصاویر واقعی مهستان + نمونه Demo</div></div>`;
+    }
+
+    function AdminRoles() {
+      const roles = [{ r: "Super Admin", d: "دسترسی کامل", perms: 18 }, { r: "مدیر مجتمع", d: "مدیریت عملیات روزانه", perms: 14 }, { r: "هیئت‌مدیره", d: "داشبورد اجرایی و گزارش‌ها", perms: 8 }, { r: "واحد مالی", d: "صورتحساب، پرداخت و گزارش", perms: 6 }, { r: "روابط عمومی", d: "اخبار، اطلاعیه‌ها و رویدادها", perms: 5 }, { r: "پشتیبانی", d: "تیکت‌ها و درخواست‌ها", perms: 4 }];
+      return `<div><div class="page-header"><div><h1 class="page-title">نقش‌ها و دسترسی‌ها</h1><div class="page-subtitle">RBAC - کنترل دسترسی</div></div></div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+    ${roles.map(r => `<div class="card">${badge("Role", "gold")}<h3 class="h3" style="margin:8px 0 4px">${esc(r.r)}</h3><p class="muted small">${esc(r.d)}</p>
+      <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--c-slate-100);display:flex;justify-content:space-between"><span class="small muted">${r.perms} دسترسی</span>${btn("ویرایش", { variant: "ghost", size: "sm" })}</div></div>`).join("")}</div></div>`;
+    }
+
+    function AdminSettings() {
+      return `<div><div class="page-header"><div><h1 class="page-title">تنظیمات</h1><div class="page-subtitle">پیکربندی سیستم</div></div></div>
+  <div class="card"><h3 class="h3" style="margin-bottom:16px">اطلاعات مجتمع</h3>
+    <div class="grid" style="grid-template-columns:1fr 1fr;gap:14px">
+      <div class="form-group"><label class="label">نام مجتمع</label><input class="input" value="${esc(CONFIG.mallName)}" /></div>
+      <div class="form-group"><label class="label">موقعیت</label><input class="input" value="${esc(CONFIG.mallLocation)}" /></div>
+      <div class="form-group"><label class="label">تلفن</label><input class="input" value="${esc(CONFIG.mallPhone)}" /></div>
+      <div class="form-group"><label class="label">ایمیل</label><input class="input" value="${esc(CONFIG.mallEmail)}" /></div>
+      <div class="form-group" style="grid-column:span 2"><label class="label">ساعات کاری</label><input class="input" value="${esc(CONFIG.workHours)}" /></div></div>
+    ${btn("ذخیره تغییرات", { variant: "gold" })}</div></div>`;
+    }
+
+    /* ---------- 11. DCC ---------- */
+    function DemoControlCenter() {
+      if (!Store.dccOpen) return `<div class="dcc min"><div class="dcc-toggle" data-action="dcc-toggle">⚙</div></div>`;
+      return `<div class="dcc">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <h4>🎛️ Demo Control Center ${badge("هیئت‌مدیره", "gold")}</h4>
+      <button data-action="dcc-toggle" style="font-size:16px;color:var(--c-slate-500)">✕</button></div>
+    <div class="muted small" style="margin-bottom:8px">تغییر سریع نقش:</div>
+    <div class="dcc-role">${MOCK.users.map(u => `<button data-action="dcc-switch" data-uid="${u.id}" class="${Store.currentUser && Store.currentUser.id === u.id ? "active" : ""}">
+      <div style="font-weight:600">${esc(u.name)}</div><div style="font-size:10px;opacity:.7">${roleLabel(u.role)} ${u.ownerId ? "• " + u.unitLabel : ""}</div></button>`).join("")}</div>
+    <div class="muted small" style="margin-bottom:8px;margin-top:4px">سناریوهای آماده:</div><div class="dcc-divider"></div>
+    <div class="dcc-section" data-action="dcc-scenario" data-s="debtor">🔴 سناریو ۱: مالک با بدهی</div>
+    <div class="dcc-section" data-action="dcc-scenario" data-s="clean">🟢 سناریو ۲: مالک بدون بدهی</div>
+    <div class="dcc-section" data-action="dcc-scenario" data-s="manager">👔 سناریو ۳: مدیر مجتمع</div>
+    <div class="dcc-section" data-action="dcc-scenario" data-s="board">🎓 سناریو ۴: هیئت‌مدیره (Executive)</div>
+    <div class="dcc-section" data-action="dcc-scenario" data-s="finance">💰 سناریو ۵: واحد مالی</div>
+    <div class="dcc-section" data-action="dcc-scenario" data-s="admin">🛡️ سناریو ۶: ادمین سیستم</div>
+    <div class="dcc-divider"></div>
+    <div class="muted small" style="margin-bottom:6px">🎨 حالت نمایش:</div>
+    <div class="dcc-section" data-action="dcc-toast" data-m="Presentation Mode فعال شد">حالت ارائه</div>
+    <div class="dcc-section" data-action="navigate" data-route="public/home">سایت عمومی</div>
+    <div class="dcc-section" data-action="navigate" data-route="auth/login">صفحه ورود</div>
+    <div class="muted small" style="margin-top:8px;text-align:center;font-size:10px">🔑 کد OTP آزمایشی: <strong>1234</strong></div></div>`;
+    }
+
+    /* ---------- 12. CHARTS (🐛 FIX: بدون رشد بی‌نهایت) ---------- */
+    const FONT = "'Vazirmatn','Segoe UI',sans-serif";
+    function initCharts() {
+      if (typeof Chart === "undefined") return;
+      Chart.defaults.font.family = FONT;
+      Chart.defaults.color = "#64748B";
+      const F = MOCK.fin;
+      const mk = (id, cfg) => { const el = document.getElementById(id); if (el) Store.charts[id] = new Chart(el, cfg); };
+
+      mk("financeChart", {
+        type: "line",
+        data: { labels: F.trendLabels, datasets: [{ label: "وصول شده ٪", data: [85, 88, 82, 90, 87, 89], borderColor: "#C9A96E", backgroundColor: "rgba(201,169,110,.12)", tension: .4, fill: true }] },
+        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { labels: { font: { family: FONT } } } }, scales: { y: { beginAtZero: false, max: 100 } } }
+      });
+
+      mk("ticketChart", {
+        type: "doughnut",
+        data: { labels: ["ثبت شد", "در حال انجام", "تکمیل شده", "بسته شد"], datasets: [{ data: [3, 5, 8, 12], backgroundColor: ["#F59E0B", "#C9A96E", "#0F8F6A", "#64748B"] }] },
+        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "bottom", labels: { font: { family: FONT }, padding: 12 } } } }
+      });
+
+      mk("revExpChart", {
+        type: "bar",
+        data: {
+          labels: F.trendLabels, datasets: [
+            { label: "درآمد", data: F.revenue, backgroundColor: "#C9A96E", borderRadius: 6 },
+            { label: "هزینه", data: F.expenses, backgroundColor: "#152A47", borderRadius: 6 }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { labels: { font: { family: FONT } } } }, scales: { y: { beginAtZero: true } } }
+      });
+
+      mk("revBreakChart", {
+        type: "doughnut",
+        data: { labels: F.revenueBreakdown.map(x => x.label), datasets: [{ data: F.revenueBreakdown.map(x => x.value), backgroundColor: ["#C9A96E", "#E2C994", "#B8925A", "#8a6d3b", "#d7b98a"] }] },
+        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "bottom", labels: { font: { family: FONT }, padding: 10 } } } }
+      });
+
+      mk("expBreakChart", {
+        type: "doughnut",
+        data: { labels: F.expenseBreakdown.map(x => x.label), datasets: [{ data: F.expenseBreakdown.map(x => x.value), backgroundColor: ["#152A47", "#334155", "#64748B", "#94A3B8", "#C9A96E", "#D97706", "#0F8F6A"] }] },
+        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "bottom", labels: { font: { family: FONT }, padding: 10 } } } }
+      });
+    }
+
+    /* ---------- 13. RENDER ---------- */
+    function renderApp() {
+      const app = document.getElementById("app");
+      const path = window.location.hash.replace(/^#\/?/, "") || "public/home";
+      const parts = path.split("/").filter(Boolean);
+
+      Object.values(Store.charts).forEach(c => { try { c.destroy(); } catch (e) { } });
+      Store.charts = {};
+
+      if ((parts[0] === "portal" || parts[0] === "admin" || parts[0] === "executive") && !Store.currentUser) { navigate("auth/login"); return; }
+      if (parts[0] === "auth" && Store.currentUser) { goDashboard(); return; }
+      if (parts[0] !== "auth" && countdownInterval) { clearInterval(countdownInterval); countdownInterval = null; }
+
+      let html = "";
+      if (parts[0] === "public") {
+        const page = parts[1] || "home";
+        const map = { home: PublicHome, about: PublicAbout, stores: PublicStores, food: PublicFood, events: PublicEvents, news: PublicNews, offers: PublicOffers, visitor: PublicVisitor, contact: PublicContact };
+        html = PublicHeader() + (page === "store" ? PublicStoreDetail(parts[2]) : (map[page] || PublicHome)()) + PublicFooter();
+      }
+      else if (parts[0] === "auth") { html = AuthLogin(); }
+      else if (parts[0] === "portal") {
+        const page = parts[1] || "dashboard"; let content = "", title = "";
+        if (page === "dashboard") { content = OwnerDashboard(); title = "داشبورد"; }
+        else if (page === "properties") { content = OwnerProperties(); title = "املاک من"; }
+        else if (page === "finance") { content = OwnerFinance(); title = "امور مالی"; }
+        else if (page === "invoices") { content = OwnerInvoices(); title = "صورتحساب‌ها"; }
+        else if (page === "invoice") { content = OwnerInvoiceDetail(parts[2]); title = "جزئیات صورتحساب"; }
+        else if (page === "payment") { content = OwnerPayment(parts[2]); title = "پرداخت"; }
+        else if (page === "documents") { content = OwnerDocuments(); title = "اسناد"; }
+        else if (page === "bylaws") { content = OwnerBylaws(); title = "اساسنامه"; }
+        else if (page === "meetings") { content = OwnerMeetings(); title = "جلسات"; }
+        else if (page === "voting") { content = OwnerVoting(); title = "رأی‌گیری"; }
+        else if (page === "notifications") { content = OwnerNotifications(); title = "اعلان‌ها"; }
+        else if (page === "messages") { content = OwnerMessages(); title = "پیام‌ها"; }
+        else if (page === "requests") { content = OwnerRequests(); title = "درخواست‌ها"; }
+        else if (page === "surveys") { content = OwnerSurveys(); title = "نظرسنجی"; }
+        else if (page === "calendar") { content = OwnerCalendar(); title = "تقویم"; }
+        else if (page === "profile") { content = OwnerProfile(); title = "پروفایل"; }
+        else { content = OwnerDashboard(); title = "داشبورد"; }
+        html = PortalShell(content, "owner", title);
+      }
+      else if (parts[0] === "executive") {
+        const page = parts[1] || "dashboard"; let content = "", title = "";
+        if (page === "dashboard") { content = ExecutiveDashboard(); title = "داشبورد فرماندهی"; }
+        else if (page === "financial") { content = FinancialModel(); title = "مدل مالی مجتمع"; }
+        else if (page === "resolutions") { content = AdminResolutions(); title = "مصوبات"; }
+        else if (page === "projects") { content = AdminProjects(); title = "پروژه‌ها"; }
+        else if (page === "meetings") { content = OwnerMeetings(); title = "جلسات"; }
+        else { content = ExecutiveDashboard(); title = "داشبورد فرماندهی"; }
+        html = PortalShell(content, "board", title);
+      }
+      else if (parts[0] === "admin") {
+        const page = parts[1] || "dashboard"; let content = "", title = "";
+        if (page === "dashboard") { content = AdminDashboard(); title = "داشبورد مدیریتی"; }
+        else if (page === "finance") { content = FinancialModel(); title = "مدل مالی مجتمع"; }
+        else if (page === "owners") { content = AdminOwners(); title = "مدیریت مالکین"; }
+        else if (page === "properties") { content = AdminProperties(); title = "واحدها"; }
+        else if (page === "documents") { content = OwnerDocuments(); title = "اسناد"; }
+        else if (page === "meetings") { content = OwnerMeetings(); title = "جلسات"; }
+        else if (page === "resolutions") { content = AdminResolutions(); title = "مصوبات"; }
+        else if (page === "voting") { content = OwnerVoting(); title = "رأی‌گیری"; }
+        else if (page === "tickets") { content = OwnerRequests(); title = "درخواست‌ها"; }
+        else if (page === "notifications") { content = OwnerNotifications(); title = "اعلان‌ها"; }
+        else if (page === "cms") { content = AdminCms(); title = "مدیریت محتوا"; }
+        else if (page === "media") { content = AdminMedia(); title = "کتابخانه رسانه"; }
+        else if (page === "roles") { content = AdminRoles(); title = "نقش‌ها"; }
+        else if (page === "audit") { content = AdminAudit(); title = "Audit Log"; }
+        else if (page === "settings") { content = AdminSettings(); title = "تنظیمات"; }
+        else { content = AdminDashboard(); title = "داشبورد مدیریتی"; }
+        html = PortalShell(content, Store.currentUser.role, title);
+      }
+      else { html = PublicHeader() + PublicHome() + PublicFooter(); }
+
+      html += `<div class="demo-badge">🎯 نسخه Demo برای هیئت‌مدیره</div>` + DemoControlCenter();
+      app.innerHTML = html;
+      window.scrollTo(0, 0);
+      setTimeout(initCharts, 60);
+    }
+
+    /* ---------- 14. EVENTS ---------- */
+    document.addEventListener("click", async (e) => {
+      const t = e.target.closest("[data-action]");
+      if (!t) return;
+      const a = t.dataset.action;
+
+      if (a === "navigate") { e.preventDefault(); navigate(t.dataset.route); }
+      else if (a === "logout") { logout(); }
+      else if (a === "map-floor") { Store.mapFloor = t.dataset.floor; renderApp(); }
+      else if (a === "store-cat") { Store.storeFilter.cat = t.dataset.cat; refreshStores(false); }
+      else if (a === "store-floor") { Store.storeFilter.floor = t.dataset.floor; refreshStores(false); }
+      else if (a === "quick-login") { const u = MOCK.users.find(x => x.id === t.dataset.uid); if (u) login(u); }
+      else if (a === "auth-back") { Store.authStep = 1; renderApp(); }
+      else if (a === "resend-otp") { Store.authCountdown = 120; addToast("کد مجدداً ارسال شد"); renderApp(); startCountdown(); }
+      else if (a === "pay-invoice") { Store.currentInvoiceId = t.dataset.id; Store.paymentResult = null; navigate("portal/payment/" + t.dataset.id); }
+      else if (a === "pay-start") {
+        Store.paymentResult = { loading: true }; renderApp();
+        await new Promise(r => setTimeout(r, 1500));
+        const ok = Math.random() > 0.15;
+        if (ok) {
+          const inv = MOCK.invoices.find(i => i.id === Store.currentInvoiceId); if (inv) inv.status = "پرداخت شده";
+          Store.paymentResult = { ok: true, trackingCode: "PC-" + Math.floor(Math.random() * 900000 + 100000) }; addToast("پرداخت موفقیت‌آمیز");
+        }
+        else Store.paymentResult = { ok: false, error: "خطا در ارتباط با درگاه بانکی" };
+        renderApp();
+      }
+      else if (a === "pay-scenario") {
+        const s = t.dataset.s; Store.paymentResult = { loading: true }; renderApp();
+        await new Promise(r => setTimeout(r, 1200));
+        if (s === "cancel") { addToast("پرداخت لغو شد", "info"); Store.paymentResult = null; }
+        else if (s === "fail") { Store.paymentResult = { ok: false, error: "خطا در ارتباط با درگاه بانکی" }; }
+        else {
+          const inv = MOCK.invoices.find(i => i.id === Store.currentInvoiceId); if (inv) inv.status = "پرداخت شده";
+          Store.paymentResult = { ok: true, trackingCode: "PC-" + Math.floor(Math.random() * 900000 + 100000) }; addToast("پرداخت موفقیت‌آمیز");
+        }
+        renderApp();
+      }
+      else if (a === "vote") {
+        const p = MOCK.polls.find(x => x.id === t.dataset.poll);
+        if (p && p.status === "active") {
+          p.options.forEach(o => { if (o.id === t.dataset.opt) { o.votes++; o.voted = true; } else o.voted = false; });
+          addToast("رأی شما ثبت شد"); renderApp();
+        }
+      }
+      else if (a === "toggle-notif-panel") { Store.notifPanelOpen = !Store.notifPanelOpen; renderApp(); }
+      else if (a === "close-notif-panel") { Store.notifPanelOpen = false; renderApp(); }
+      else if (a === "mark-all-read") { addToast("همه اعلان‌ها خوانده شدند"); Store.notifPanelOpen = false; renderApp(); }
+      else if (a === "notif-filter") { Store.notifFilter = t.dataset.cat; renderApp(); }
+      else if (a === "open-ticket-modal") { Store.showModal = true; renderApp(); }
+      else if (a === "close-ticket-modal") { Store.showModal = false; renderApp(); }
+      else if (a === "submit-ticket") { Store.showModal = false; addToast("درخواست ثبت شد"); renderApp(); }
+      else if (a === "open-ticket-detail") { Store.ticketModalId = t.dataset.id; renderApp(); }
+      else if (a === "close-ticket-detail") { Store.ticketModalId = null; renderApp(); }
+      else if (a === "dcc-toggle") { Store.dccOpen = !Store.dccOpen; renderApp(); }
+      else if (a === "dcc-switch" || a === "dcc-scenario") {
+        resetDemoFinance();
+        const u = a === "dcc-switch" ? MOCK.users.find(x => x.id === t.dataset.uid)
+          : MOCK.users[{ debtor: 0, clean: 1, manager: 3, board: 4, finance: 5, admin: 6 }[t.dataset.s]];
+        if (u) { login(u); addToast("ورود به عنوان: " + u.name + " (" + roleLabel(u.role) + ")"); }
+      }
+      else if (a === "dcc-toast") { addToast(t.dataset.m, "info"); }
+    });
+
+    document.addEventListener("input", (e) => {
+      const t = e.target;
+      if (t.dataset.actionInput === "auth-mobile") Store.authMobile = t.value.replace(/[^\d]/g, "").slice(0, 11);
+      else if (t.dataset.actionInput === "store-q") { Store.storeFilter.q = t.value; refreshStores(true); }
+      else if (t.classList.contains("otp-box")) {
+        const idx = parseInt(t.dataset.otpIdx);
+        const v = t.value.replace(/[^\d]/g, "").slice(-1);
+        t.value = v; Store.authCode[idx] = v;
+        if (v && idx < 3) { const nx = document.querySelector('.otp-box[data-otp-idx="' + (idx + 1) + '"]'); if (nx) nx.focus(); }
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      const t = e.target;
+      if (t.classList.contains("otp-box") && e.key === "Backspace" && !t.value) {
+        const idx = parseInt(t.dataset.otpIdx);
+        if (idx > 0) { const pv = document.querySelector('.otp-box[data-otp-idx="' + (idx - 1) + '"]'); if (pv) pv.focus(); }
+      }
+    });
+
+    document.addEventListener("submit", async (e) => {
+      const f = e.target.closest("[data-action-form]");
+      if (!f) return;
+      e.preventDefault();
+      const a = f.dataset.actionForm;
+      if (a === "send-otp") {
+        if (!/^09\d{9}$/.test(Store.authMobile)) { addToast("شماره موبایل معتبر نیست", "error"); return; }
+        Store.authStep = 2; Store.authCountdown = 120; Store.authCode = ["", "", "", ""];
+        addToast("کد تأیید ارسال شد"); renderApp(); startCountdown();
+        setTimeout(() => { const b = document.querySelector('.otp-box[data-otp-idx="0"]'); if (b) b.focus(); }, 50);
+      } else if (a === "verify-otp") {
+        const code = Store.authCode.join("");
+        if (code.length !== 4) { addToast("کد ۴ رقمی را کامل وارد کنید", "error"); return; }
+        const res = await API.auth.verifyOtp(Store.authMobile, code);
+        if (res.ok) login(res.user); else addToast(res.error, "error");
+      }
+    });
+
+    let countdownInterval = null;
+    function startCountdown() {
+      if (countdownInterval) clearInterval(countdownInterval);
+      countdownInterval = setInterval(() => {
+        if (Store.authCountdown <= 0) { clearInterval(countdownInterval); countdownInterval = null; return; }
+        Store.authCountdown--;
+        const el = document.querySelector('[data-action="resend-otp"]');
+        if (el && el.parentElement) {
+          if (Store.authCountdown > 0)
+            el.parentElement.innerHTML = '<span class="muted">ارسال مجدد تا ' + Math.floor(Store.authCountdown / 60) + ':' + String(Store.authCountdown % 60).padStart(2, "0") + ' دیگر</span>';
+          else
+            el.parentElement.innerHTML = '<button type="button" data-action="resend-otp" style="color:var(--c-gold-600);font-weight:600">ارسال مجدد کد</button>';
+        }
+      }, 1000);
+    }
+
+    /* ---------- 15. INIT ---------- */
+    window.addEventListener("hashchange", renderApp);
+    if (document.readyState !== "loading") {
+      if (!window.location.hash) window.location.hash = "#/public/home";
+      renderApp();
+    } else {
+      window.addEventListener("DOMContentLoaded", () => {
+        if (!window.location.hash) window.location.hash = "#/public/home";
+        renderApp();
+      });
+    }
+  </script>
+</body>
+
+</html>
